@@ -4,6 +4,9 @@
 
 ## 目录
 
+> [首页](https://github.com/waitforu/docs/blob/master/index/index.md)
+> [发送短信](https://github.com/waitforu/docs/blob/master/send_sms.md)
+
 ## 公共信息
 
 | 名称 | 描述 | 备注 |
@@ -17,9 +20,11 @@
 ####  api-version
 ```
 type: string
+require: true
 default: v1
 in: header
 ```
+#### 
 
 ### 部分返回信息code表
 
