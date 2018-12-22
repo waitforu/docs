@@ -24,6 +24,10 @@
 	- [用户登录](https://github.com/waitforu/docs/tree/master/integration/save.md)
 	- [我的积分](https://github.com/waitforu/docs/tree/master/integration/read.md)
 	- [积分兑换记录](https://github.com/waitforu/docs/tree/master/integration/index.md)
+- [关注](https://github.com/waitforu/docs/tree/master/focus)
+	- [用户登录](https://github.com/waitforu/docs/tree/master/focus/save.md)
+	- [我的积分](https://github.com/waitforu/docs/tree/master/focus/read.md)
+	- [关注列表](https://github.com/waitforu/docs/tree/master/focus/index.md)
 
 ## 公共信息
 
