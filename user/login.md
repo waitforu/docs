@@ -1,21 +1,24 @@
-# 刷新accessToken
+# 用户登录
 ```
-接口地址： http://148.70.13.176/refresh/{refresh_token}/{apikey}
-请求方式： GET
-接口备注：
+接口地址： http://148.70.13.176/user/login
+请求方式： POST
+接口备注： 
 ```
 ## 请求参数
 
 | 字段名称 | 字段类型 | 是否必须 | 位置 | 默认值 | 说明 |
 |    -    |    -    |    -    |  -   |   -   |  -   |
 | api-version | string | 是 | header | v1 | api版本号 |
-| refresh_token | string | 是 | params | - | 刷新token |
-| apikey | string | 是 | params | - | api令牌 |
 
 ## 描述
 
 ## 接收参数
-无
+
+| 字段名称 | 字段类型 | 是否必须 | 默认值 | 说明 |
+|    -    |    -    |    -    |    -   |  -   |
+| phone | string | 是 | - | 手机号(必须是大陆手机号) |
+| code | string | 是 | - | 短信验证码 |
+| imei | string | 是 | - | IMEI码 |
 
 ## 返回参数
 

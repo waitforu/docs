@@ -2,10 +2,17 @@
 ```
 接口地址： http://148.70.13.176/version/{app_type}
 请求方式： GET
-请 求 头: api-version:v1，app-version:v0.0.1bate
-请求参数: app_type:{1:安卓，2：ios}
-接口备注： api-version为api接口版本号, app-version为客户端APP版本
+接口备注：
 ```
+
+## 请求参数
+
+| 字段名称 | 字段类型 | 是否必须 | 位置 | 默认值 | 说明 |
+|    -    |    -    |    -    |  -   |   -   |  -   |
+| api-version | string | 是 | header | v1 | api版本号 |
+| app-version | string | 是 | params | v0.0.1bate | 客户端APP版本 |
+| app_type | int | 是 | params | 1 | APP类型; 1:安卓，2：ios |
+
 ## 描述
 
 ## 接收参数

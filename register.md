@@ -2,9 +2,15 @@
 ```
 接口地址： http://148.70.13.176/register
 请求方式： POST
-请 求 头: api-version:v1 
-接口备注： api-version为api接口版本号
+接口备注：
 ```
+
+## 请求参数
+
+| 字段名称 | 字段类型 | 是否必须 | 位置 | 默认值 | 说明 |
+|    -    |    -    |    -    |  -   |   -   |  -   |
+| api-version | string | 是 | header | v1 | api版本号 |
+
 ## 描述
 
 ## 接收参数
