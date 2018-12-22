@@ -10,6 +10,9 @@
 - [版本内容](https://github.com/waitforu/docs/tree/master/version)
 	- [获取版本号](https://github.com/waitforu/docs/tree/master/version/version.md)
 	- [刷新token](https://github.com/waitforu/docs/tree/master/version/refresh.md)
+- [榜单](https://github.com/waitforu/docs/tree/master/rank)
+	- [获取总榜单](https://github.com/waitforu/docs/tree/master/rank/index.md)
+	- [获取平均时长](https://github.com/waitforu/docs/tree/master/rank/ave.md)
 
 
 ## 公共信息
