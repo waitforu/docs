@@ -20,7 +20,10 @@
 	- [个人信息](https://github.com/waitforu/docs/tree/master/user/edit.md)
 	- [修改个人信息](https://github.com/waitforu/docs/tree/master/user/update.md)
 	- [用户登出](https://github.com/waitforu/docs/tree/master/user/logout.md)
-
+- [我的积分](https://github.com/waitforu/docs/tree/master/integration)
+	- [用户登录](https://github.com/waitforu/docs/tree/master/integration/save.md)
+	- [我的积分](https://github.com/waitforu/docs/tree/master/integration/read.md)
+	- [积分兑换记录](https://github.com/waitforu/docs/tree/master/integration/index.md)
 
 ## 公共信息
 
