@@ -59,7 +59,7 @@ in: header
 	- [修改个人信息](https://github.com/waitforu/docs/tree/master/user/update.md)
 	- [用户登出](https://github.com/waitforu/docs/tree/master/user/logout.md)
 - [我的积分](https://github.com/waitforu/docs/tree/master/integration)
-	- [用户登录](https://github.com/waitforu/docs/tree/master/integration/save.md)
+	- [积分兑换](https://github.com/waitforu/docs/tree/master/integration/save.md)
 	- [我的积分](https://github.com/waitforu/docs/tree/master/integration/read.md)
 	- [积分兑换记录](https://github.com/waitforu/docs/tree/master/integration/index.md)
 - [关注](https://github.com/waitforu/docs/tree/master/focus)
@@ -68,4 +68,6 @@ in: header
 	- [关注列表](https://github.com/waitforu/docs/tree/master/focus/index.md)
 - [时长](https://github.com/waitforu/docs/tree/master/time)
 	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md)
+- [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
+	- [进入钓鱼(包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼)](https://github.com/waitforu/docs/tree/master/fishing/save.md)
 
