@@ -1,0 +1,54 @@
+# 查看是否已关注该钓手
+```
+接口地址： http://148.70.13.176/focuss/{$id}
+请求方式： GET
+接口备注：
+```
+## 请求参数
+
+| 字段名称 | 字段类型 | 是否必须 | 位置 | 默认值 | 说明 |
+|    -    |    -    |    -    |  -   |   -   |  -   |
+| api-version | string | 是 | header | v1 | api版本号 |
+| Authorization | string | 是 | header | - | 验证令牌 |
+
+## 描述
+
+## 接收参数
+
+无
+
+## 返回参数
+
+| 字段名称 | 字段类型 | 是否必须 | 说明 |
+|    -    |    -    |    -    |   -   |
+| code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
+| message | string | 是 | 返回信息简略说明 |
+| data | array | 是 | 返回信息集，不存在则无返回信息 |
+|　├─fisher_id | int | 是 | 钓手号 |
+|　├─nick_name | string | 是 | 昵称 |
+|　├─avatar | int | 是 | 钓手头像地址 |
+|　└─focused | boolean | 是 | 是否已关注 |
+
+## 范例
+
+### 请求信息
+```
+GET http://148.70.13.176/focuss/59041581
+headers
+	api-version: v1
+	Authorization: Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+```
+
+### 返回信息
+```
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "fisher_id": 59041581,
+        "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
+        "nick_name": "sf_BUJXJZSP",
+        "focused": true
+    }
+}
+```

@@ -64,10 +64,11 @@ in: header
 	- [积分兑换记录](https://github.com/waitforu/docs/tree/master/integration/index.md)
 - [关注](https://github.com/waitforu/docs/tree/master/focus)
 	- [关注钓手](https://github.com/waitforu/docs/tree/master/focus/save.md)
+	- [查看是否已关注该钓手](https://github.com/waitforu/docs/tree/master/focus/read.md) **围观页面需要调取一次，查看是否已经关注垂钓中钓手**
 	- [取关钓手](https://github.com/waitforu/docs/tree/master/focus/delete.md)
 	- [关注列表](https://github.com/waitforu/docs/tree/master/focus/index.md)
 - [时长](https://github.com/waitforu/docs/tree/master/time)
 	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md)
 - [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
-	- [进入钓鱼(包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼)](https://github.com/waitforu/docs/tree/master/fishing/save.md)
+	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼**
 
