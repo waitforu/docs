@@ -69,6 +69,9 @@ in: header
 	- [关注列表](https://github.com/waitforu/docs/tree/master/focus/index.md)
 - [时长](https://github.com/waitforu/docs/tree/master/time)
 	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md)
+- [订单](https://github.com/waitforu/docs/tree/master/orders)
+	- [创建订单](https://github.com/waitforu/docs/tree/master/orders/save.md)
+	- [充值记录](https://github.com/waitforu/docs/tree/master/orders/index.md)
 - [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
 	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼**
 
