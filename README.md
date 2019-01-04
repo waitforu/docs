@@ -25,6 +25,7 @@ in: header
 type: string
 require: false
 default: Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+拼接规则:base64(apikey:fisher_id:access_token)
 in: header
 ```
 
