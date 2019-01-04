@@ -1,4 +1,4 @@
-# 积分兑换记录
+# 渔币兑换记录
 ```
 接口地址： http://148.70.13.176/integrations
 请求方式： GET
@@ -28,5 +28,5 @@
 |　 　　├─iu_id | string | 是 | 兑换单号 |
 |　 　　├─time | int | 是 | 兑换获得单位时长 |
 |　 　　├─number | int | 是 | 兑换数量 |
-|　 　　├─integration | int | 是 | 兑换使用积分 |
+|　 　　├─integration | int | 是 | 兑换使用渔币 |
 |　 　　└─created_at | int | 是 | 兑换时间 |

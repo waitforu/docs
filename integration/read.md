@@ -1,4 +1,4 @@
-# 我的积分
+# 我的渔币
 ```
 接口地址： http://148.70.13.176/integrations/{fisher_id}
 请求方式： GET
@@ -25,11 +25,11 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
-|　├─available_integration | int | 是 | 可用积分 |
-|　├─total_integration | string | 是 | 总积分 |
+|　├─available_integration | int | 是 | 可用渔币 |
+|　├─total_integration | string | 是 | 总渔币 |
 |　├─total_fishing | string | 是 | 累计钓鱼数 |
-|　└─settings | array | 是 | 积分商城列表 |
+|　└─settings | array | 是 | 渔币兑换列表 |
 |　 　　├─is_id | int | 是 | 兑换编号 |
-|　 　　├─integration | int | 是 | 所需积分 |
+|　 　　├─integration | int | 是 | 所需渔币 |
 |　 　　├─time | int | 是 | 可兑换时长 |
 |　 　　└─description | string | 是 | 兑换项描述 |
