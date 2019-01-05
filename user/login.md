@@ -12,12 +12,32 @@
 
 ## 描述
 
-## 接收参数
+## 接收参数 —— 手机登录
 
 | 字段名称 | 字段类型 | 是否必须 | 默认值 | 说明 |
 |    -    |    -    |    -    |    -   |  -   |
 | phone | string | 是 | - | 手机号(必须是大陆手机号) |
 | code | string | 是 | - | 短信验证码 |
+| imei | string | 是 | - | IMEI码 |
+
+## 接收参数 —— 微信登录
+
+| 字段名称 | 字段类型 | 是否必须 | 默认值 | 说明 |
+|    -    |    -    |    -    |    -   |  -   |
+| wechat_id | string | 是 | - | 微信唯一标识码 |
+| nick_name | string | 是 | - | 微信昵称 |
+| avatar | string | 是 | - | 微信头像地址 |
+| gender | string | 是 | 1 | 性别1 男，2 女 |
+| imei | string | 是 | - | IMEI码 |
+
+## 接收参数 —— 微博登录
+
+| 字段名称 | 字段类型 | 是否必须 | 默认值 | 说明 |
+|    -    |    -    |    -    |    -   |  -   |
+| weibo_id | string | 是 | - | 微博唯一标识码 |
+| nick_name | string | 是 | - | 微博昵称 |
+| avatar | string | 是 | - | 微博头像地址 |
+| gender | string | 是 | 1 | 性别1 男，2 女 |
 | imei | string | 是 | - | IMEI码 |
 
 ## 返回参数
@@ -35,3 +55,62 @@
 |　 　　├─fisher_id | int | 是 | 钓手号 |
 |　 　　├─phone | string | 是 | 手机号 |
 |　 　　└─invite_token | string | 是 | 邀请码 |
+
+## 范例
+
+### 输入1
+
+```
+POST http://148.70.13.176/user/login
+headers:
+	api-version: v1
+posts:
+	phone: 18288888888
+	code: 123456
+	imei: 865441030309330
+```
+
+### 输入2
+```
+POST http://148.70.13.176/user/login
+headers:
+	api-version: v1
+posts:
+	wechat_id: 11111123
+	nick_name: Murning
+	avatar: https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg
+	gender: 1
+	imei: 865441030309330
+```
+
+### 输入3
+```
+POST http://148.70.13.176/user/login
+headers:
+	api-version: v1
+posts:
+	weibo_id: asdasgdafeasd
+	nick_name: Murning
+	avatar: https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg
+	gender: 1
+	imei: 865441030309330
+```
+
+### 输出
+```json
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "access_token": "gc4d8zTMR5Br1wXJ09356VqPLmZQOptA",
+        "expires_time": 604800,
+        "refresh_token": "fqM5n0Q46IrLu51z2sJ8wpB3a4ltTNXh",
+        "user": {
+            "fisher_id": 67224273,
+            "apikey": "mKm3pTXSZtwAi2HVj0GhiAFHYcG6XOms",
+            "phone": "18267857539",
+            "invite_token": "b4paLVLjGzM8rta6p0bJDbXsLcOzxMp3"
+        }
+    }
+}
+```
