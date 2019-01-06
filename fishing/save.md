@@ -56,7 +56,7 @@ headers:
 	api-version:v1
 	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
 	Content-Type : application/x-www-form-urlencoded
-params:
+body:
 	status : 2
 
 ```
