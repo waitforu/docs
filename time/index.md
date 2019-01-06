@@ -25,13 +25,48 @@
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
 |　├─time | float | 是 | 剩余时长 |
-|　├─integration | Boolean | 是 | 积分是否足够兑换 |
-|　├─clocked | boolean | 是 | 今天是否已签到 |
-|　└─mission | array | 否 | 任务列表 |
-|　 　　└─m_id | int | 是 | 任务编号 |
-|　 　　 　├─name | string | 是 | 任务名称 |
-|　 　　 　├─detail | string | 是 | 任务描述 |
-|　 　　 　├─integration | int | 是 | 可获积分 |
-|　 　　 　├─spacing | int | 是 | 级距 |
-|　 　　 　├─node | int | 是 | 节点 |
-|　 　　 　└─accomplished | boolean | 是 | 是否已完成 |
+|　└─packages | array | 是 | 套餐列表 |
+|　 　　├─package_id | string | 是 | 套餐编号 |
+|　 　　├─name | string | 是 | 套餐名称 |
+|　 　　├─details | string | 是 | 套餐描述 |
+|　 　　├─price | float | 是 | 套餐单价价格 |
+|　 　　├─time | string | 是 | 套餐时长 |
+|　 　　└─discount | int | 是 | 套餐折扣 |
+
+## 范例
+
+### 输入
+```
+GET http://148.70.13.176/times
+headers:
+    api-version:v1
+    Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+```
+### 输出
+```
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "time": 0,
+        "packages": [
+            {
+                "package_id": "20190101",
+                "name": "3小时套餐",
+                "details": "3h/￥15",
+                "price": 15,
+                "time": "3h",
+                "discount": 100
+            },
+            {
+                "package_id": "20190102",
+                "name": "5小时套餐",
+                "details": "5h/￥20",
+                "price": 20,
+                "time": "5h",
+                "discount": 100
+            }
+        ]
+    }
+}
+```
