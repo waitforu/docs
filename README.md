@@ -69,10 +69,12 @@ in: header
 	- [取关钓手](https://github.com/waitforu/docs/tree/master/focus/delete.md)
 	- [关注列表](https://github.com/waitforu/docs/tree/master/focus/index.md)
 - [时长](https://github.com/waitforu/docs/tree/master/time)
-	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md)
+	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md) **new**
 - [订单](https://github.com/waitforu/docs/tree/master/orders)
 	- [创建订单](https://github.com/waitforu/docs/tree/master/orders/save.md)
 	- [充值记录](https://github.com/waitforu/docs/tree/master/orders/index.md)
 - [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
 	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼**
+- [任务相关](https://github.com/waitforu/docs/tree/master/mission)
+	- [获取任务列表](https://github.com/waitforu/docs/tree/master/mission/index.md) **new**
 
