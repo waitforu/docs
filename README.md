@@ -53,7 +53,7 @@ in: header
 	- [获取总榜单](https://github.com/waitforu/docs/tree/master/rank/index.md)
 	- [获取平均时长](https://github.com/waitforu/docs/tree/master/rank/ave.md)
 - [用户信息](https://github.com/waitforu/docs/tree/master/user)
-	- [用户登录](https://github.com/waitforu/docs/tree/master/user/login.md)
+	- [用户登录](https://github.com/waitforu/docs/tree/master/user/login.md)**new**
 	- [个人主页](https://github.com/waitforu/docs/tree/master/user/read.md)
 	- [个人中心](https://github.com/waitforu/docs/tree/master/user/index.md)
 	- [个人信息](https://github.com/waitforu/docs/tree/master/user/edit.md)
@@ -74,7 +74,7 @@ in: header
 	- [创建订单](https://github.com/waitforu/docs/tree/master/orders/save.md)
 	- [充值记录](https://github.com/waitforu/docs/tree/master/orders/index.md)
 - [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
-	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼**
+	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼** **new**
 - [任务相关](https://github.com/waitforu/docs/tree/master/mission)
 	- [获取任务列表](https://github.com/waitforu/docs/tree/master/mission/index.md) **new**
 
