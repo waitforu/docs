@@ -34,16 +34,16 @@
 |　├─lives | array | 是 | 钓台关联所有直播流地址集 |
 |　│　　└─下标 | string | 是 | 直播流地址,第一个地址为默认播放地址 |
 |　└─commands | array | 是 | 指令集 |
-|　 　　├─1on | string | 是 | 一路开指令binary流经过base64加密 |
-|　 　　├─1off | string | 是 | 一路关指令binary流经过base64加密 |
-|　 　　├─2on | string | 是 | 二路开指令binary流经过base64加密 |
-|　 　　├─2off | string | 是 | 二路关指令binary流经过base64加密 |
-|　 　　├─3on | string | 是 | 三路开指令binary流经过base64加密 |
-|　 　　├─3off | string | 是 | 三路关指令binary流经过base64加密 |
-|　 　　├─4on | string | 是 | 四路开指令binary流经过base64加密 |
-|　 　　├─4off | string | 是 | 四路关指令binary流经过base64加密 |
-|　 　　├─5on | string | 是 | 五路开指令binary流经过base64加密 |
-|　 　　├─5off | string | 是 | 五路开指令binary流经过base64加密 |
+|　 　　├─on1| string | 是 | 一路开指令binary流经过base64加密 |
+|　 　　├─off1 | string | 是 | 一路关指令binary流经过base64加密 |
+|　 　　├─on2| string | 是 | 二路开指令binary流经过base64加密 |
+|　 　　├─off2 | string | 是 | 二路关指令binary流经过base64加密 |
+|　 　　├─on3| string | 是 | 三路开指令binary流经过base64加密 |
+|　 　　├─off3 | string | 是 | 三路关指令binary流经过base64加密 |
+|　 　　├─on4| string | 是 | 四路开指令binary流经过base64加密 |
+|　 　　├─off4 | string | 是 | 四路关指令binary流经过base64加密 |
+|　 　　├─on5| string | 是 | 五路开指令binary流经过base64加密 |
+|　 　　├─off5 | string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　└─alloff | string | 是 | 全关指令binary流经过base64加密 |
 
 ## 范例
@@ -72,19 +72,19 @@ params:
         "dtu_id": "505437446",
         "dtu_apikay": "vAcBwxQ5D4HiISRtxDwoQXxE=xI=",
         "lives": [
-            "rtmp://dytl.game.caizs.com/live/11111??txSecret=c3d2ac4419139fdda114cfd057176c96&txTime=5C25C153"
+            "rtmp://dytl.game.caizs.com/live/11111?bizid=37147&txSecret=4bd09fe542ddecc1d0ae42694b6ccb5f&txTime=5C320520"
         ],
         "commands": {
-            "1on": "/gUAAP8AmDU=",
-            "1off": "/gUAAAAA2cU=",
-            "2on": "/gUAAf8AyfU=",
-            "2off": "/gUAAQAAiAU=",
-            "3on": "/gUAAv8AOfU=",
-            "3off": "/gUAAgAAeAU=",
-            "4on": "/gUAA/8AaDU=",
-            "4off": "/gUAAwAAKcU=",
-            "5on": "/gUABP8A2fQ=",
-            "5off": "/gUABAAAmAQ=",
+            "on1": "/gUAAP8AmDU=",
+            "off1": "/gUAAAAA2cU=",
+            "on2": "/gUAAf8AyfU=",
+            "off2": "/gUAAQAAiAU=",
+            "on3": "/gUAAv8AOfU=",
+            "off3": "/gUAAgAAeAU=",
+            "on4": "/gUAA/8AaDU=",
+            "off4": "/gUAAwAAKcU=",
+            "on5": "/gUABP8A2fQ=",
+            "off5": "/gUABAAAmAQ=",
             "alloff": "/g8AAAAFAQAgUg=="
         }
     }
