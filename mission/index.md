@@ -36,6 +36,12 @@
 ## 范例
 
 ### 输入
+```
+GET http://148.70.13.176/missions
+headers:
+	api-version:v1
+	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+```
 
 ###  输出
 ```
