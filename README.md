@@ -53,7 +53,7 @@ in: header
 	- [获取总榜单](https://github.com/waitforu/docs/tree/master/rank/index.md)
 	- [获取平均时长](https://github.com/waitforu/docs/tree/master/rank/ave.md)
 - [用户信息](https://github.com/waitforu/docs/tree/master/user)
-	- [用户登录](https://github.com/waitforu/docs/tree/master/user/login.md)**new**
+	- [用户登录](https://github.com/waitforu/docs/tree/master/user/login.md)      **登录后多一条是否已绑定手机号字段**
 	- [个人主页](https://github.com/waitforu/docs/tree/master/user/read.md)
 	- [个人中心](https://github.com/waitforu/docs/tree/master/user/index.md)
 	- [个人信息](https://github.com/waitforu/docs/tree/master/user/edit.md)
@@ -78,5 +78,5 @@ in: header
 - [任务相关](https://github.com/waitforu/docs/tree/master/mission)
 	- [获取任务列表](https://github.com/waitforu/docs/tree/master/mission/index.md) **new**
 	- [领取任务奖励](https://github.com/waitforu/docs/tree/master/mission/update.md) **new**
-- [绑定手机号](https://github.com/waitforu/docs/tree/master/binding)
-	- [获取任务列表](https://github.com/waitforu/docs/tree/master/binding/phone.md) **new**
+- [绑定](https://github.com/waitforu/docs/tree/master/binding)
+	- [绑定手机号](https://github.com/waitforu/docs/tree/master/binding/phone.md) **new**

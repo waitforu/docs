@@ -106,6 +106,7 @@ posts:
         "access_token": "gc4d8zTMR5Br1wXJ09356VqPLmZQOptA",
         "expires_time": 604800,
         "refresh_token": "fqM5n0Q46IrLu51z2sJ8wpB3a4ltTNXh",
+        "locked": true,
         "user": {
             "fisher_id": 67224273,
             "apikey": "mKm3pTXSZtwAi2HVj0GhiAFHYcG6XOms",
