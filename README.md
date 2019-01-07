@@ -78,4 +78,5 @@ in: header
 - [任务相关](https://github.com/waitforu/docs/tree/master/mission)
 	- [获取任务列表](https://github.com/waitforu/docs/tree/master/mission/index.md) **new**
 	- [领取任务奖励](https://github.com/waitforu/docs/tree/master/mission/update.md) **new**
-
+- [绑定手机号](https://github.com/waitforu/docs/tree/master/binding)
+	- [获取任务列表](https://github.com/waitforu/docs/tree/master/binding/phone.md) **new**

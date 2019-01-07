@@ -50,6 +50,7 @@
 |　├─access_token | string | 是 | access token |
 |　├─expires_time | int | 是 | token过期时间 |
 |　├─refresh_token | string | 是 | 刷新access_token的refresh_token |
+|　├─locked | boolean | 是 | 是否已经绑定手机号, true 是, false否 |
 |　└─client | array | 是 | 用户信息 |
 |　 　　├─apikey | string | 是 | api校验值 |
 |　 　　├─fisher_id | int | 是 | 钓手号 |
