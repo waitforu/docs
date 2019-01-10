@@ -30,17 +30,7 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
-|　├─order_id | string | 是 | 订单号 |
-|　├─phone | string | 是 | 总积分 |
-|　├─buyer | int | 是 | 钓手号 |
-|　├─buy_time | int | 是 | 购买总时长 |
-|　├─price | float | 是 | 总价格 |
-|　└─items | array | 是 | 订单副表 |
-|　 　　├─package_id | string | 是 | 套餐编号 |
-|　 　　├─pack_name | string | 是 | 套餐名称 |
-|　 　　├─pack_time | int | 是 | 套餐单位时长 |
-|　 　　├─price | float | 是 | 套餐单价 |
-|　 　　└─number | int | 是 | 购买数量 |
+|　└─orderInfo | string | 是 | alipay请求字符串 |
 
 > type = 2
 
@@ -50,7 +40,7 @@
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
 |　├─prepayid | string | 是 | 微信返回的支付交易会话ID |
-|　├─package | string | 是 | 暂填写固定值Sign=WXPay |
+|　├─package_str | string | 是 | 扩展字段, 暂填写固定值Sign=WXPay |
 |　├─noncestr | string | 是 | 随机字符串 |
 |　├─timestamp | int | 是 | 时间戳 |
 |　└─sign | string | 是 | 签名 |
@@ -82,18 +72,7 @@ params:
     "code": 200,
     "message": "success",
     "data": {
-        "order_id": "2019010218021701878365067224273",
-        "phone": "18267857539",
-        "buyer": "67224273",
-        "buy_time": 5,
-        "price": 20,
-        "items": {
-            "package_id": "20190102",
-            "pack_name": "5小时套餐",
-            "pack_time": 5,
-            "price": 20,
-            "number": "1"
-        }
+        "orderInfo": "alipay_sdk=alipay-sdk-php-20180705&app_id=2018121862595325&biz_content=%7B%22subject%22%3A%22%5Cu6c99%5Cu53d1%5Cu6e14%5Cu9738-5%5Cu5c0f%5Cu65f6%5Cu5957%5Cu9910%22%2C%22out_trade_no%22%3A%222019011018452401262919067224273%22%2C%22total_amount%22%3A20%2C%22timeout_express%22%3A%2230m%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F148.70.13.176%2Falipay&sign_type=RSA2&timestamp=2019-01-10+18%3A45%3A25&version=1.0&sign=ibgHgpeCcpMh8UJRoM5Q6US0ZlwzzxaK1A2MO%2FjfnQhhgN8CCXiXyJ1biDUPsj%2ByxbQ3nVr9g916QTddRJsTeAg0F3ZJ0WK4SIU8i9cpnfRqBRBxiMpRlvQa0EFqF2Bx8XFkQNsDC3Gtgz05DtCk7rmwlhfVF094jjlVjaupRllBvJuy%2F6o56ImelThur3rzBJ0u1eKYJnmUG5LqS4QXmvZDuixmP1ML1wo1BEB4P0yhoNAyC6F1xqhWxn8YQOXkd%2Fp%2BHlQiwbbUF2RUW2otfKaz2YAS0tw%2Bspqwq4dDR6WK0caVHbZ3dEuapDHBv%2F4mp9d0M4P4%2F2aSnZ5BxFaMEw%3D%3D"
     }
 }
 ```
@@ -122,7 +101,7 @@ params:
     "message": "success",
     "data": {
         "prepayid": "wx101015191124682873bb11140792662597",
-        "package": "Sign=WXPay",
+        "package_str": "Sign=WXPay",
         "noncestr": "unRvmYCFOZaheyZH",
         "timestamp": 1547086519,
         "sign": "1787A47A0B5D888EE0315F411DFFF71198BE0ECFB06BDC3876FE995F13ADC972"
