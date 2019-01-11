@@ -20,6 +20,7 @@
 |    -    |    -    |    -    |    -   |  -   |
 | phone | string | 否 | - | 手机号(必须是大陆手机号) |
 | fishing_age | float | 否 | - | 钓龄 |
+| avatar | string | 否 | - | 头像链接 |
 | birthday | string | 否 | - | 生日格式： YYYY-MM-dd 例：1992-07-07 |
 | sex | int | 否 | - | 性别，1 男，2 女  |
 | nick_name | string | 否 | - | 昵称 |
