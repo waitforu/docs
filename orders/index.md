@@ -24,7 +24,7 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
-|　└─下标n | array | 否 | 第N个订单 |
+|　└─info | array | 否 | 第N个订单 |
 |　 　　├─order_id | string | 是 | 订单号 |
 |　 　　├─buy_time | string | 是 | 总购买时长 |
 |　 　　├─buy_at | string | 是 | 购买时间 |
@@ -49,14 +49,16 @@ headers:
 {
     "code": 200,
     "message": "success",
-    "data": [
-        {
-            "order_id": "2019010218021701878365067224273",
-            "buy_time": "5h",
-            "buy_at": "您还未付款",
-            "status": "待支付",
-            "price": "20.00元"
-        }
-    ]
+    "data": {
+        "info": [
+            {
+                "order_id": "2019010218021701878365067224273",
+                "buy_time": "5h",
+                "buy_at": "您还未付款",
+                "status": "待支付",
+                "price": "20.00元"
+            }
+        ]
+    }
 }
 ```
