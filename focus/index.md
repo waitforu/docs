@@ -26,9 +26,18 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
+<<<<<<< HEAD
 |　├─page | int | 是 | 当前页码 |
 |　├─total_page | int | 是 | 总页码 |
 |　├─focus | array | 否 | 兑换记录表 |
+=======
+|　├─focus | array | 否 | 关注列表 |
+|　│　　├─fisher_id | int | 是 | 钓手号 |
+|　│　　├─status | int | 是 | 钓手在线状态 |
+|　│　　├─avatar | int | 是 | 钓手头像地址 |
+|　│　　└─nick_name | int | 是 | 昵称 |
+|　└─recommend_focus | array | 否 | 推荐关注列表 |
+>>>>>>> baced3f67446f504cd30587a90862d0cda1a3f8c
 |　 　　├─fisher_id | int | 是 | 钓手号 |
 |　 　　├─status | int | 是 | 钓手在线状态 1 离线，2 在线，3 垂钓中, 4 围观中|
 |　 　　├─avatar | string | 是 | 钓手头像地址 |

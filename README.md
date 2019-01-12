@@ -88,5 +88,10 @@ in: header
 	- [进入围观](https://github.com/waitforu/docs/tree/master/onlook/save.md) **包括前去围观，选择渔场围观(即直接通过渔场开始围观)，搜索钓手号或者手机号围观（需要完整的手机号）** **new**
 - [邀请页](https://github.com/waitforu/docs/tree/master/invitation)
 	- [邀请页](https://github.com/waitforu/docs/tree/master/invitation/read.md) **new**
+<<<<<<< HEAD
 - [粉丝](https://github.com/waitforu/docs/tree/master/fans)
 	- [粉丝页列表](https://github.com/waitforu/docs/tree/master/fans/index.md) **new**
+=======
+- [COS](https://github.com/waitforu/docs/tree/master/cos)
+	- [获取临时密钥](https://github.com/waitforu/docs/tree/master/cos/index.md) **new**
+>>>>>>> baced3f67446f504cd30587a90862d0cda1a3f8c
