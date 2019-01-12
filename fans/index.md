@@ -1,6 +1,6 @@
-# 关注列表
+# 粉丝页列表
 ```
-接口地址： http://148.70.13.176/focuss
+接口地址： http://148.70.13.176/fans
 请求方式： GET
 接口备注：
 ```
@@ -10,8 +10,7 @@
 |    -    |    -    |    -    |  -   |   -   |  -   |
 | api-version | string | 是 | header | v1 | api版本号 |
 | Authorization | string | 是 | header | - | 验证令牌 |
-| page | int | 否 | params | 1 | 页码 |
-| fields | string | 否 | params | - | 搜索条件 |
+| page | 否 | 是 | params | 1 | 页码 |
 
 ## 描述
 
@@ -28,23 +27,18 @@
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
 |　├─page | int | 是 | 当前页码 |
 |　├─total_page | int | 是 | 总页码 |
-|　├─focus | array | 否 | 兑换记录表 |
+|　└─fans | array | 否 | 兑换记录表 |
 |　 　　├─fisher_id | int | 是 | 钓手号 |
 |　 　　├─status | int | 是 | 钓手在线状态 1 离线，2 在线，3 垂钓中, 4 围观中|
 |　 　　├─avatar | string | 是 | 钓手头像地址 |
 |　 　　├─mutual_focus | boolean | 是 | 互相关注，true 是, false否 |
-|　 　　└─nick_name | int | 是 | 昵称 |
-|　└─recommend_focus | array | 否 | 推荐关注列表 |
-|　 　　├─fisher_id | int | 是 | 钓手号 |
-|　 　　├─status | int | 是 | 钓手在线状态 1 离线，2 在线，3 垂钓中, 4 围观中|
-|　 　　├─avatar | string | 是 | 钓手头像地址 |
 |　 　　└─nick_name | int | 是 | 昵称 |
 
 ## 范例
 
 ### 输入
 ```
-GET http://148.70.13.176/focuss
+GET http://148.70.13.176/fans
 
 headers:
 	api-version:v1
@@ -58,33 +52,17 @@ params:
     "code": 200,
     "message": "success",
     "data": {
-        "focus": [
+        "fans": [
             {
-                "fisher_id": 83373784,
+                "fisher_id": 98045418,
                 "status": 2,
+                "nick_name": "runmanz",
                 "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
-                "nick_name": "sf_JZAXJKAE",
-                "mutual_focus": false
-            },
-            {
-                "fisher_id": 59041581,
-                "status": 2,
-                "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
-                "nick_name": "sf_BUJXJZSP",
                 "mutual_focus": false
             }
         ],
         "page": "1",
-        "total_page": 1,
-        "recommend_focus": [
-            {
-                "fisher_id": 67224273,
-                "status": 2,
-                "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
-                "nick_name": "runmanz",
-                "mutual_focus": false
-            }
-        ]
+        "total_page": 1
     }
 }
 ```

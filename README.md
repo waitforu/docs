@@ -36,6 +36,7 @@ in: header
 | 200   | 请求成功     | data部分为返回数据，如果无data说明该请求不需要返回数据 |
 | 400   | 请求失败    | message为简略错误信息，data中为详细错误信息 |
 | 401   | 请求验证失败  | 同400 |
+| 302   | 渔场/钓台已满  | 同400 |
 | 403   | 请求被拒绝  | 同400 |
 | 404   | 请求链接不存在 | 同400 |
 | 422   | 请求数据有误 | 同400 |
@@ -87,3 +88,5 @@ in: header
 	- [进入围观](https://github.com/waitforu/docs/tree/master/onlook/save.md) **包括前去围观，选择渔场围观(即直接通过渔场开始围观)，搜索钓手号或者手机号围观（需要完整的手机号）** **new**
 - [邀请页](https://github.com/waitforu/docs/tree/master/invitation)
 	- [邀请页](https://github.com/waitforu/docs/tree/master/invitation/read.md) **new**
+- [粉丝](https://github.com/waitforu/docs/tree/master/fans)
+	- [粉丝页列表](https://github.com/waitforu/docs/tree/master/fans/index.md) **new**
