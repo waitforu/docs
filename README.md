@@ -92,3 +92,6 @@ in: header
 	- [粉丝页列表](https://github.com/waitforu/docs/tree/master/fans/index.md) **new
 - [COS](https://github.com/waitforu/docs/tree/master/cos)
 	- [获取临时密钥](https://github.com/waitforu/docs/tree/master/cos/index.md) **new**
+- [签到](https://github.com/waitforu/docs/tree/master/clock)
+	- [签到首页](https://github.com/waitforu/docs/tree/master/clock/index.md) **new**
+	- [签到](https://github.com/waitforu/docs/tree/master/clock/index.md) **new**

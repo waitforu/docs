@@ -1,4 +1,4 @@
-# 签到首页
+# 签到首页/今日是否以前的
 ```
 接口地址： http://148.70.13.176/clocks
 请求方式： GET
@@ -24,4 +24,7 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
+|　├─clock_setting | array | 是 | 连续签到N天可获渔币列表 |
+|　│　　└─下标N | int | 是 | 连续N+1天可获渔币 例：[0 => 1]表示连续签到1天可获1渔币, [2 => 2]连续签到3天可获2渔币 |
+|　├─continuous_times | int | 是 | 已经连续签到天数 |
 |　└─hasClocked | boolean | 是 | 今日是否已签到 |
