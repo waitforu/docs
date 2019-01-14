@@ -25,3 +25,24 @@
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
 |　└─continuous_times | int | 是 | 连续签到次数 |
+
+## 范例
+
+### 输入
+```
+POST http://148.70.13.176/clocks
+
+headers:
+	api-version:v1
+	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+```
+### 输出
+```
+{
+    "code": 200,
+    "message": "签到成功",
+    "data": {
+        "continuous_times": 1
+    }
+}
+```
