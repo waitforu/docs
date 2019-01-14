@@ -53,19 +53,39 @@ headers:
         "packages": [
             {
                 "package_id": "20190101",
-                "name": "3小时套餐",
-                "details": "3h/￥15",
-                "price": 15,
-                "time": "3h",
-                "discount": 100
+                "name": "1小时套餐",
+                "details": "1h/￥8",
+                "price": 8,
+                "time": 1,
+                "discount": 100,
+                "thrift_price": 1.6
             },
             {
                 "package_id": "20190102",
+                "name": "3小时套餐",
+                "details": "3h/￥18",
+                "price": 18,
+                "time": 3,
+                "discount": 100,
+                "thrift_price": 9.6
+            },
+            {
+                "package_id": "20190114",
                 "name": "5小时套餐",
-                "details": "5h/￥20",
-                "price": 20,
-                "time": "5h",
-                "discount": 100
+                "details": "5h/￥28",
+                "price": 28,
+                "time": 5,
+                "discount": 100,
+                "thrift_price": 17.6
+            },
+            {
+                "package_id": "20190115",
+                "name": "10小时套餐",
+                "details": "10h/￥58",
+                "price": 58,
+                "time": 10,
+                "discount": 100,
+                "thrift_price": 33.6
             }
         ]
     }
