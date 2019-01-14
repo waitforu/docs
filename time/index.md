@@ -30,6 +30,7 @@
 |　 　　├─name | string | 是 | 套餐名称 |
 |　 　　├─details | string | 是 | 套餐描述 |
 |　 　　├─price | float | 是 | 套餐单价价格 |
+|　 　　├─thrift_price | float | 是 | 套餐相对于1小时可节省金额 |
 |　 　　├─time | string | 是 | 套餐时长 |
 |　 　　└─discount | int | 是 | 套餐折扣 |
 

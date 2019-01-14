@@ -58,11 +58,13 @@ headers:
                 "accomplished": false
             },
             {
-                "m_id": 10002,
-                "name": "第一次钓到鱼",
-                "detail": "第一次钓到鱼",
-                "integration": 3000,
-                "accomplished": false
+                "m_id": 10005,
+                "name": "邀请好友",
+                "detail": "每邀请一位好友奖励288渔币",
+                "integration": 288,
+                "accomplished": false,
+                "node": 1,
+                "spacing": 1
             },
             {
                 "m_id": 10003,
@@ -72,6 +74,15 @@ headers:
                 "accomplished": false,
                 "node": 1,
                 "spacing": 10
+            },
+            {
+                "m_id": 10004,
+                "name": "钓了22小时鱼",
+                "detail": "每钓了2小时鱼奖励80渔币",
+                "integration": 80,
+                "accomplished": false,
+                "node": 11,
+                "spacing": 2
             }
         ]
     }
