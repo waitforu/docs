@@ -28,7 +28,8 @@
 |　　 ├─m_id | int | 是 | 任务编号 |
 |　 　├─name | string | 是 | 任务名称 |
 |　 　├─detail | string | 是 | 任务描述 |
-|　 　├─integration | int | 是 | 可获积分 |
+|　 　├─integration | int | 是 | 可获渔币 |
+|　 　├─thumbnail | string | 是 | 缩略图 |
 |　 　├─spacing | int | 是 | 级距 |
 |　 　├─node | int | 是 | 节点 |
 |　 　└─accomplished | boolean | 是 | 是否已完成, true 已完成, false 未完成 |
@@ -54,32 +55,36 @@ headers:
                 "m_id": 10001,
                 "name": "首次充值",
                 "detail": "首次充值",
-                "integration": 1000,
+                "integration": 50,
+                "thumbnail": "https://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/default/cz.png",
                 "accomplished": false
             },
             {
                 "m_id": 10005,
                 "name": "邀请好友",
-                "detail": "每邀请一位好友奖励288渔币",
+                "detail": "每邀请一位好友奖励",
                 "integration": 288,
+                "thumbnail": "https://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/default/yq.png",
                 "accomplished": false,
-                "node": 1,
+                "node": 4,
                 "spacing": 1
             },
             {
                 "m_id": 10003,
-                "name": "钓到10条鱼",
-                "detail": "每钓到10条鱼奖励2000积分",
-                "integration": 2000,
+                "name": "钓鱼超过60条",
+                "detail": "每钓到5条鱼奖励80渔币",
+                "integration": 80,
+                "thumbnail": "https://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/default/fishing_count.png",
                 "accomplished": false,
-                "node": 1,
-                "spacing": 10
+                "node": 12,
+                "spacing": 5
             },
             {
                 "m_id": 10004,
-                "name": "钓了22小时鱼",
-                "detail": "每钓了2小时鱼奖励80渔币",
+                "name": "钓鱼超过22小时",
+                "detail": "每钓2小时鱼奖励80渔币",
                 "integration": 80,
+                "thumbnail": "https://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/default/fshing_time.png",
                 "accomplished": false,
                 "node": 11,
                 "spacing": 2

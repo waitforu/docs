@@ -39,7 +39,9 @@ in: header
 | 302   | 渔场/钓台已满  | 同400 |
 | 403   | 请求被拒绝  | 同400 |
 | 404   | 请求链接不存在 | 同400 |
+| 408   | 请求超时 | 同400 |
 | 422   | 请求数据有误 | 同400 |
+| 430   | 任务列表，链接需要跳转 | 同400 |
 | 500   | 服务器错误 | 同400 |
 
 ## 目录
@@ -85,7 +87,7 @@ in: header
 	- [绑定/取绑微信](https://github.com/waitforu/docs/tree/master/binding/wechat.md) **new**
 	- [绑定/取绑微博](https://github.com/waitforu/docs/tree/master/binding/weibo.md) **new**
 - [围观](https://github.com/waitforu/docs/tree/master/onlook)
-	- [进入围观](https://github.com/waitforu/docs/tree/master/onlook/save.md) **包括前去围观，选择渔场围观(即直接通过渔场开始围观)，搜索钓手号或者手机号围观（需要完整的手机号）** **new**
+	- [进入围观](https://github.com/waitforu/docs/tree/master/onlook/save.md) **包括前去围观，选择渔场围观(即直接通过渔场开始围观)，搜索钓手号或者手机号围观（需要完整的手机号）**
 - [邀请页](https://github.com/waitforu/docs/tree/master/invitation)
 	- [邀请页](https://github.com/waitforu/docs/tree/master/invitation/read.md) **new**
 - [粉丝](https://github.com/waitforu/docs/tree/master/fans)
