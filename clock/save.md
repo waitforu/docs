@@ -24,7 +24,8 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
-|　└─continuous_times | int | 是 | 连续签到次数 |
+|　├─clocked | string | 是 | 签到信息 |
+|　└─continuous_times | int | 否 | 连续签到次数 |
 
 ## 范例
 
@@ -40,9 +41,18 @@ headers:
 ```
 {
     "code": 200,
-    "message": "签到成功",
+    "message": "success",
     "data": {
-        "continuous_times": 1
+        "continuous_times": 1,
+        "clocked": "签到成功"
+    }
+}
+或者
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "clocked": "您今日已签到"
     }
 }
 ```
