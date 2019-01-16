@@ -25,6 +25,7 @@
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
 |　├─time | float | 是 | 剩余时长 |
+|　├─discount | string | 是 | 优惠优惠 空字符串没有首充优惠，'八'有 |
 |　└─packages | array | 是 | 套餐列表 |
 |　 　　├─package_id | string | 是 | 套餐编号 |
 |　 　　├─name | string | 是 | 套餐名称 |
@@ -50,12 +51,13 @@ headers:
     "message": "success",
     "data": {
         "time": 0,
+        "discount": "八",
         "packages": [
             {
                 "package_id": "20190101",
                 "name": "1小时套餐",
                 "details": "1h/￥8",
-                "price": 8,
+                "price": 6.4,
                 "time": 1,
                 "discount": 100,
                 "thrift_price": 1.6
@@ -63,29 +65,29 @@ headers:
             {
                 "package_id": "20190102",
                 "name": "3小时套餐",
-                "details": "3h/￥18",
-                "price": 18,
+                "details": "3h/￥20",
+                "price": 16,
                 "time": 3,
                 "discount": 100,
-                "thrift_price": 9.6
+                "thrift_price": 8
             },
             {
                 "package_id": "20190114",
                 "name": "5小时套餐",
-                "details": "5h/￥28",
-                "price": 28,
+                "details": "5h/￥32",
+                "price": 25.6,
                 "time": 5,
                 "discount": 100,
-                "thrift_price": 17.6
+                "thrift_price": 14.4
             },
             {
                 "package_id": "20190115",
                 "name": "10小时套餐",
-                "details": "10h/￥58",
-                "price": 58,
+                "details": "10h/￥60",
+                "price": 48,
                 "time": 10,
                 "discount": 100,
-                "thrift_price": 33.6
+                "thrift_price": 32
             }
         ]
     }
