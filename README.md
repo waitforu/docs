@@ -96,4 +96,4 @@ in: header
 	- [获取临时密钥](https://github.com/waitforu/docs/tree/master/cos/index.md) **new**
 - [签到](https://github.com/waitforu/docs/tree/master/clock)
 	- [签到首页](https://github.com/waitforu/docs/tree/master/clock/index.md) **new**
-	- [签到](https://github.com/waitforu/docs/tree/master/clock/index.md) **new**
+	- [签到](https://github.com/waitforu/docs/tree/master/clock/save.md) **new**
