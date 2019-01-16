@@ -26,3 +26,25 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
+|　└─focus_status | int | 是 | 关注状态，1 未关注, 2 已关注, 3 互相关注 |
+
+## 范例
+
+### 输入
+```
+DELETE http://148.70.13.176/focuss/9678212
+
+headers:
+	api-version:v1
+	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+```
+### 输出
+```
+{
+    "code": 200,
+    "message": "取关成功",
+    "data": {
+        "focus_status": 1
+    }
+}
+```

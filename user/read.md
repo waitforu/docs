@@ -25,7 +25,7 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
-|　├─focus_flag | boolean | 否 | 是否已关注，如果不存在则为本人查看 |
+|　├─focus_status | int | 是 | 关注状态，1 未关注, 2 已关注, 3 互相关注 |
 |　├─fisher_id | int | 是 | 钓手号 |
 |　├─nick_name | string | 是 | 昵称 |
 |　├─avatar | string | 是 | 头像地址 |
@@ -42,3 +42,49 @@
 |　 　　├─fp_id | int | 否 | 钓台编号 |
 |　 　　├─fishery_name | string | 是 | 渔场名称 |
 |　 　　└─rewards | string | 是 | 获得奖励内容 |
+## 范例
+
+### 输入
+```
+GET http://148.70.13.176/users/9678212
+
+headers:
+	api-version:v1
+	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+```
+### 输出
+```
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "focus_status": 0,
+        "fisher_id": "67224273",
+        "nick_name": "runmanz",
+        "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
+        "phone": "18267857539",
+        "sex": 1,
+        "sex_zh": "男",
+        "likes": 0,
+        "focus": 5,
+        "fans": 0,
+        "user_fishplat": [
+            {
+                "time": "12-27",
+                "timestamp": 1545874901,
+                "on": true,
+                "fp_id": 1,
+                "fishery_name": "西湖渔场",
+                "rewards": null
+            },
+            {
+                "time": "12-12",
+                "timestamp": 1544583174,
+                "on": false,
+                "fishery_name": "西湖渔场",
+                "rewards": "获得奖励，300渔币"
+            }
+        ]
+    }
+}
+```
