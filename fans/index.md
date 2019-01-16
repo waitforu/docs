@@ -31,7 +31,7 @@
 |　 　　├─fisher_id | int | 是 | 钓手号 |
 |　 　　├─status | int | 是 | 钓手在线状态 1 离线，2 在线，3 垂钓中, 4 围观中|
 |　 　　├─avatar | string | 是 | 钓手头像地址 |
-|　 　　├─mutual_focus | boolean | 是 | 互相关注，true 是, false否 |
+|　 　　├─mutual_focus | int | 是 | 关注状态，1 未关注, 2 已关注, 3 互相关注 |
 |　 　　└─nick_name | int | 是 | 昵称 |
 
 ## 范例
@@ -58,7 +58,7 @@ params:
                 "status": 2,
                 "nick_name": "runmanz",
                 "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
-                "mutual_focus": false
+                "mutual_focus": 1
             }
         ],
         "page": "1",
