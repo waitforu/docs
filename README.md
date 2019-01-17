@@ -65,7 +65,7 @@ in: header
 - [我的渔币](https://github.com/waitforu/docs/tree/master/integration)
 	- [渔币兑换](https://github.com/waitforu/docs/tree/master/integration/save.md)
 	- [我的渔币](https://github.com/waitforu/docs/tree/master/integration/read.md)
-	- [渔币兑换记录](https://github.com/waitforu/docs/tree/master/integration/index.md)
+	- [渔币使用记录](https://github.com/waitforu/docs/tree/master/integration/index.md) **NEW**
 - [关注](https://github.com/waitforu/docs/tree/master/focus)
 	- [关注钓手](https://github.com/waitforu/docs/tree/master/focus/save.md)
 	- [查看是否已关注该钓手](https://github.com/waitforu/docs/tree/master/focus/read.md) **围观页面需要调取一次，查看是否已经关注垂钓中钓手**
