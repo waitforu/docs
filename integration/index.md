@@ -25,8 +25,49 @@
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 是 | 返回信息集，不存在则无返回信息 |
 |　└─list | array | 否 | 兑换记录表 |
-|　 　　├─iu_id | string | 是 | 兑换单号 |
-|　 　　├─time | int | 是 | 兑换获得单位时长 |
-|　 　　├─number | int | 是 | 兑换数量 |
-|　 　　├─integration | int | 是 | 兑换使用渔币 |
-|　 　　└─created_at | int | 是 | 兑换时间 |
+|　 　　├─title | string | 是 | 渔币记录标题 |
+|　 　　├─integration | int | 是 | 渔币 |
+|　 　　└─created_at | int | 是 | 记录时间 |
+
+
+## 范例
+
+### 输入
+```
+GET http://148.70.13.176/integrations
+
+headers:
+	api-version:v1
+	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+```
+### 输出
+```
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "list": [
+            {
+                "title": "兑换了1h*1",
+                "integration": "-400渔币",
+                "created_at": "2019-01-17 18:06:11"
+            },
+            {
+                "title": "钓鱼超过5条奖励",
+                "integration": "+80渔币",
+                "created_at": "2019-01-17 17:02:38"
+            },
+            {
+                "title": "邀请了3个好友奖励",
+                "integration": "+864渔币",
+                "created_at": "2019-01-17 17:01:33"
+            },
+            {
+                "title": "邀请了3个好友奖励",
+                "integration": "+864渔币",
+                "created_at": "2019-01-17 17:00:12"
+            }
+        ]
+    }
+}
+```
