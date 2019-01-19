@@ -46,6 +46,8 @@ in: header
 
 ## 目录
 
+- [Socket](https://github.com/waitforu/docs/blob/master/socket.md)
+
 - [首页](https://github.com/waitforu/docs/blob/master/index/index.md)
 - [发送短信](https://github.com/waitforu/docs/blob/master/send_sms.md)
 - [注册设备ID](https://github.com/waitforu/docs/blob/master/register.md)
