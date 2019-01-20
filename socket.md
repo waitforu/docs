@@ -13,7 +13,6 @@
 
 ### 接收参数
 
-
 - [钓手心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#钓手心跳输入)
 
 ### 返回参数
@@ -104,6 +103,7 @@ onclose响应事件，此时前端应关闭页面
 ### 接收参数
 
 - [心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#心跳输入)
+- [切换围观 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#切换围观钓台输入)
 - [点赞输入 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#自己点赞)
 
 ### 返回参数
