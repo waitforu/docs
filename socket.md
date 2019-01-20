@@ -152,9 +152,24 @@ $ws_client->send('heartbeat');
 }
 ```
 
+#### 切换围观钓台输入
+```
+$ws_client->send('{"op_type": "cutover", "ws_fp_id": 2}');
+```
+
+#### 切换围观返回
+```
+{
+	"ws_fisher_id":"67224273",
+	"ws_onlook":1,
+	"ws_likes":0,
+	"ws_fish_num":0,
+}
+```
+
 #### 自己点赞
 ```
-$ws_client->send('{"op_type": "likes"}');
+$ws_client->send('{"op_type": "like"}');
 ```
 
 #### 自己点赞响应
