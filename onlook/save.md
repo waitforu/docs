@@ -28,7 +28,12 @@
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
 |　├─fp_id | int | 是 | 钓台编号 |
-|　└─lives | string | 是 | 围观地址 |
+|　├─lives | string | 是 | 围观地址 |
+|　└─fishing_fisher | array | 是 | 钓鱼者信息 |
+|　　 ├─nick_name | string | 是 | 昵称 |
+|　 　├─avatar | string | 是 | 头像 |
+|　 　├─fisher_id | int | 是 | 钓手号 |
+|　 　└─focus_status | int | 是 | 关注状态，1 未关注, 2 已关注, 3 互相关注 |
 
 ## 范例
 
@@ -52,7 +57,13 @@ body:
     "message": "success",
     "data": {
         "fp_id": 1
-        "lives": "rtmp://play.gofishfarm.com/live/11111"
+        "lives": "rtmp://play.gofishfarm.com/live/11111",
+        "fishing_fisher": {
+            "nick_name": "runmanz",
+            "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
+            "fisher_id": 67224273,
+            "focus_status": 1
+        }
     }
 }
 或者
