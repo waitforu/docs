@@ -46,6 +46,8 @@
 |　 　　├─off4 | string | 是 | 四路关指令binary流经过base64加密 |
 |　 　　├─on5| string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　├─off5 | string | 是 | 五路开指令binary流经过base64加密 |
+|　 　　├─on6| string | 是 | 五路开指令binary流经过base64加密 |
+|　 　　├─off6 | string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　└─alloff | string | 是 | 全关指令binary流经过base64加密 |
 
 ## 范例
@@ -89,6 +91,8 @@ body:
             "off4": "/gUAAwAAKcU=",
             "on5": "/gUABP8A2fQ=",
             "off5": "/gUABAAAmAQ=",
+            "on6": "/gUABf8AiDQ=",
+            "off6": "/gUABQAAycQ=",
             "alloff": "/g8AAAAFAQAgUg=="
         }
     }
