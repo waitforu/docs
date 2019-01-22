@@ -28,6 +28,7 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
+|　├─info | int | 是 | 用户跳转 0 不跳转, 1 跳转充值页, 2 跳转新手引导页 |
 |　├─fp_id | int | 是 | 钓台编号 |
 |　├─dtu_id | string | 是 | DTU设备ID |
 |　├─dtu_apikey | string | 是 | DTU设备api-key |
@@ -72,6 +73,7 @@ body:
     "code": 200,
     "message": "success",
     "data": {
+        "info": 0,
         "fp_id": 1,
         "dtu_id": "505437446",
         "dtu_apikay": "vAcBwxQ5D4HiISRtxDwoQXxE=xI=",
