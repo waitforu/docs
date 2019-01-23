@@ -67,35 +67,36 @@ in: header
 - [我的渔币](https://github.com/waitforu/docs/tree/master/integration)
 	- [渔币兑换](https://github.com/waitforu/docs/tree/master/integration/save.md)
 	- [我的渔币](https://github.com/waitforu/docs/tree/master/integration/read.md)
-	- [渔币使用记录](https://github.com/waitforu/docs/tree/master/integration/index.md) **NEW**
+	- [渔币使用记录](https://github.com/waitforu/docs/tree/master/integration/index.md)
 - [关注](https://github.com/waitforu/docs/tree/master/focus)
 	- [关注钓手](https://github.com/waitforu/docs/tree/master/focus/save.md)
 	- [查看是否已关注该钓手](https://github.com/waitforu/docs/tree/master/focus/read.md) **围观页面需要调取一次，查看是否已经关注垂钓中钓手**
 	- [取关钓手](https://github.com/waitforu/docs/tree/master/focus/delete.md)
 	- [关注列表](https://github.com/waitforu/docs/tree/master/focus/index.md)
 - [时长](https://github.com/waitforu/docs/tree/master/time)
-	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md) **new**
+	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md)
+	- [**时长记录**](https://github.com/waitforu/docs/tree/master/time/read.md) **NEW**
 - [订单](https://github.com/waitforu/docs/tree/master/orders)
 	- [创建订单](https://github.com/waitforu/docs/tree/master/orders/save.md)
 	- [充值记录](https://github.com/waitforu/docs/tree/master/orders/index.md)
 - [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
-	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼** **new**
-	- [退出钓鱼](https://github.com/waitforu/docs/tree/master/fishing/delete.md) **new**
+	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼** 
+	- [退出钓鱼](https://github.com/waitforu/docs/tree/master/fishing/delete.md)
 - [任务相关](https://github.com/waitforu/docs/tree/master/mission)
-	- [获取任务列表](https://github.com/waitforu/docs/tree/master/mission/index.md) **new**
-	- [领取任务奖励](https://github.com/waitforu/docs/tree/master/mission/update.md) **new**
+	- [获取任务列表](https://github.com/waitforu/docs/tree/master/mission/index.md)
+	- [领取任务奖励](https://github.com/waitforu/docs/tree/master/mission/update.md)
 - [绑定](https://github.com/waitforu/docs/tree/master/binding)
-	- [绑定手机号](https://github.com/waitforu/docs/tree/master/binding/phone.md) **new**
-	- [绑定/取绑微信](https://github.com/waitforu/docs/tree/master/binding/wechat.md) **new**
-	- [绑定/取绑微博](https://github.com/waitforu/docs/tree/master/binding/weibo.md) **new**
+	- [绑定手机号](https://github.com/waitforu/docs/tree/master/binding/phone.md)
+	- [绑定/取绑微信](https://github.com/waitforu/docs/tree/master/binding/wechat.md)
+	- [绑定/取绑微博](https://github.com/waitforu/docs/tree/master/binding/weibo.md)
 - [围观](https://github.com/waitforu/docs/tree/master/onlook)
 	- [进入围观](https://github.com/waitforu/docs/tree/master/onlook/save.md) **包括前去围观，选择渔场围观(即直接通过渔场开始围观)，搜索钓手号或者手机号围观（需要完整的手机号）**
 - [邀请页](https://github.com/waitforu/docs/tree/master/invitation)
-	- [邀请页](https://github.com/waitforu/docs/tree/master/invitation/read.md) **new**
+	- [邀请页](https://github.com/waitforu/docs/tree/master/invitation/read.md)
 - [粉丝](https://github.com/waitforu/docs/tree/master/fans)
-	- [粉丝页列表](https://github.com/waitforu/docs/tree/master/fans/index.md) **new
+	- [粉丝页列表](https://github.com/waitforu/docs/tree/master/fans/index.md) 
 - [COS](https://github.com/waitforu/docs/tree/master/cos)
-	- [获取临时密钥](https://github.com/waitforu/docs/tree/master/cos/index.md) **new**
+	- [获取临时密钥](https://github.com/waitforu/docs/tree/master/cos/index.md)
 - [签到](https://github.com/waitforu/docs/tree/master/clock)
-	- [签到首页](https://github.com/waitforu/docs/tree/master/clock/index.md) **new**
-	- [签到](https://github.com/waitforu/docs/tree/master/clock/save.md) **new**
+	- [签到首页](https://github.com/waitforu/docs/tree/master/clock/index.md)
+	- [签到](https://github.com/waitforu/docs/tree/master/clock/save.md)
