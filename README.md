@@ -100,3 +100,5 @@ in: header
 - [签到](https://github.com/waitforu/docs/tree/master/clock)
 	- [签到首页](https://github.com/waitforu/docs/tree/master/clock/index.md)
 	- [签到](https://github.com/waitforu/docs/tree/master/clock/save.md)
+- [变现猫](https://github.com/waitforu/docs/tree/master/bianxianmao)
+	- [获取变现猫免登录URL](https://github.com/waitforu/docs/tree/master/bianxianmao/index.md) **new**
