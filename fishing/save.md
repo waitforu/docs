@@ -34,6 +34,7 @@
 |　├─dtu_apikey | string | 是 | DTU设备api-key |
 |　├─on_time | int | 是 | 开响应时间 |
 |　├─off_time | int | 是 | 关响应时间 |
+|　├─fish_integration | int | 是 | 每条鱼对应可获渔币 |
 |　├─lives | array | 是 | 钓台关联所有直播流地址集 |
 |　│　　└─下标 | string | 是 | 直播流地址,第一个地址为默认播放地址 |
 |　└─commands | array | 是 | 指令集 |
@@ -77,8 +78,9 @@ body:
         "fp_id": 1,
         "dtu_id": "505437446",
         "dtu_apikay": "vAcBwxQ5D4HiISRtxDwoQXxE=xI=",
-        "on_time": 300,
-        "off_time": 300,
+        "on_time": 150,
+        "off_time": 150,
+        "fish_integration": 100,
         "lives": [
             "rtmp://dytl.game.caizs.com/live/11111?bizid=37147&txSecret=4bd09fe542ddecc1d0ae42694b6ccb5f&txTime=5C320520"
         ],
