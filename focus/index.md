@@ -1,6 +1,6 @@
 # 关注列表
 ```
-接口地址： http://148.70.13.176/focuss
+接口地址： http://www.gofishfarm.com/focuss
 请求方式： GET
 接口备注：
 ```
@@ -44,7 +44,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/focuss
+GET http://www.gofishfarm.com/focuss
 
 headers:
 	api-version:v1

@@ -1,6 +1,6 @@
 # 个人主页
 ```
-接口地址： http://148.70.13.176/users/{fisher_id}
+接口地址： http://www.gofishfarm.com/users/{fisher_id}
 请求方式： GET
 接口备注：
 ```
@@ -46,7 +46,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/users/9678212
+GET http://www.gofishfarm.com/users/9678212
 
 headers:
 	api-version:v1

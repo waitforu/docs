@@ -1,6 +1,6 @@
 # 获取版本号
 ```
-接口地址： http://148.70.13.176/version/{app_type}
+接口地址： http://www.gofishfarm.com/version/{app_type}
 请求方式： GET
 接口备注：
 ```

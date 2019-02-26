@@ -1,6 +1,6 @@
 # 查看是否已关注该钓手
 ```
-接口地址： http://148.70.13.176/focuss/{$id}
+接口地址： http://www.gofishfarm.com/focuss/{$id}
 请求方式： GET
 接口备注：
 ```
@@ -33,7 +33,7 @@
 
 ### 请求信息
 ```
-GET http://148.70.13.176/focuss/59041581
+GET http://www.gofishfarm.com/focuss/59041581
 headers
 	api-version: v1
 	Authorization: Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=

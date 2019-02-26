@@ -1,8 +1,8 @@
-# 退出钓鱼
+# 故障问题
 ```
-接口地址： http://www.gofishfarm.com/fishing/{$fp_id}
-请求方式： DELETE
-接口备注： 
+接口地址： http://admin_fnsjs.gofishfarm.com/api/fault/create
+请求方式： GET
+接口备注：
 ```
 ## 请求参数
 
@@ -10,12 +10,10 @@
 |    -    |    -    |    -    |  -   |   -   |  -   |
 | api-version | string | 是 | header | v1 | api版本号 |
 | Authorization | string | 是 | header | - | 验证令牌 |
-| fp_id | int | 是 | params | - | 钓台编号 |
 
 ## 描述
 
 ## 接收参数
-
 无
 
 ## 返回参数
@@ -25,29 +23,30 @@
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
+|　└─details | array | 是 | 问题内容，选择框，key为问题编号，value为名称 |
 
-## 范例
-
-### 发送信息
-
+## 待处理页
+### 输入
 ```
-DELETE http://www.gofishfarm.com/fishing/1
+GET http://admin_fnsjs.gofishfarm.com/api/fault/create
+
 headers:
 	api-version:v1
-	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
-
+	Authorization : Bearer cE96R1JRcjhhTHV5bXNzR2xEaWtWYWlYbWVwOHdIYjk6OTk5OTp4ajdUZjZxQTF5Mjg0bTNYb2FSTDlVSlNLclpkenVPZw==
 ```
 
-### 回收信息
-
-```
+### 输出
+```json
 {
     "code": 200,
-    "message": "success"
-}
-或者
-{
-    "code": 403,
-    "message": "您未进行钓鱼"
+    "message": "success",
+    "data": {
+        "details": {
+            "1": "鱼线缠绕",
+            "2": "操作不熟",
+            "3": "操作失灵",
+            "4": "其他问题"
+        }
+    }
 }
 ```

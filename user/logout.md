@@ -1,6 +1,6 @@
 # 用户登出
 ```
-接口地址： http://148.70.13.176/user/logout
+接口地址： http://www.gofishfarm.com/user/logout
 请求方式： POST
 接口备注： 
 ```

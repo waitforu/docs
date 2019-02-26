@@ -1,6 +1,6 @@
 # 渔币兑换
 ```
-接口地址： http://148.70.13.176/integrations
+接口地址： http://www.gofishfarm.com/integrations
 请求方式： POST
 接口备注：
 ```

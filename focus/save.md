@@ -1,6 +1,6 @@
 # 关注钓手
 ```
-接口地址： http://148.70.13.176/focuss
+接口地址： http://www.gofishfarm.com/focuss
 请求方式： POST
 接口备注：
 ```
@@ -31,7 +31,7 @@
 
 ### 输入
 ```
-POST http://148.70.13.176/focuss
+POST http://www.gofishfarm.com/focuss
 
 headers:
 	api-version:v1

@@ -1,6 +1,6 @@
 # 首页信息列表
 ```
-接口地址： http://148.70.13.176/index
+接口地址： http://www.gofishfarm.com/index
 请求方式： GET
 接口备注：
 ```

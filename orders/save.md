@@ -1,6 +1,6 @@
 # 创建订单
 ```
-接口地址： http://148.70.13.176/orders
+接口地址： http://www.gofishfarm.com/orders
 请求方式： POST
 接口备注： 微信appid和商户号从app本地获取
 ```
@@ -53,7 +53,7 @@
 ### 输入
 
 ```
-POST http://148.70.13.176/orders
+POST http://www.gofishfarm.com/orders
 
 headers:
 	api-version:v1
@@ -72,7 +72,7 @@ params:
     "code": 200,
     "message": "success",
     "data": {
-        "orderInfo": "alipay_sdk=alipay-sdk-php-20180705&app_id=2018121862595325&biz_content=%7B%22subject%22%3A%22%5Cu6c99%5Cu53d1%5Cu6e14%5Cu9738-5%5Cu5c0f%5Cu65f6%5Cu5957%5Cu9910%22%2C%22out_trade_no%22%3A%222019011018452401262919067224273%22%2C%22total_amount%22%3A20%2C%22timeout_express%22%3A%2230m%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F148.70.13.176%2Falipay&sign_type=RSA2&timestamp=2019-01-10+18%3A45%3A25&version=1.0&sign=ibgHgpeCcpMh8UJRoM5Q6US0ZlwzzxaK1A2MO%2FjfnQhhgN8CCXiXyJ1biDUPsj%2ByxbQ3nVr9g916QTddRJsTeAg0F3ZJ0WK4SIU8i9cpnfRqBRBxiMpRlvQa0EFqF2Bx8XFkQNsDC3Gtgz05DtCk7rmwlhfVF094jjlVjaupRllBvJuy%2F6o56ImelThur3rzBJ0u1eKYJnmUG5LqS4QXmvZDuixmP1ML1wo1BEB4P0yhoNAyC6F1xqhWxn8YQOXkd%2Fp%2BHlQiwbbUF2RUW2otfKaz2YAS0tw%2Bspqwq4dDR6WK0caVHbZ3dEuapDHBv%2F4mp9d0M4P4%2F2aSnZ5BxFaMEw%3D%3D"
+        "orderInfo": "alipay_sdk=alipay-sdk-php-20180705&app_id=2018121862595325&biz_content=%7B%22subject%22%3A%22%5Cu6c99%5Cu53d1%5Cu6e14%5Cu9738-5%5Cu5c0f%5Cu65f6%5Cu5957%5Cu9910%22%2C%22out_trade_no%22%3A%222019011018452401262919067224273%22%2C%22total_amount%22%3A20%2C%22timeout_express%22%3A%2230m%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2Fwww.gofishfarm.com%2Falipay&sign_type=RSA2&timestamp=2019-01-10+18%3A45%3A25&version=1.0&sign=ibgHgpeCcpMh8UJRoM5Q6US0ZlwzzxaK1A2MO%2FjfnQhhgN8CCXiXyJ1biDUPsj%2ByxbQ3nVr9g916QTddRJsTeAg0F3ZJ0WK4SIU8i9cpnfRqBRBxiMpRlvQa0EFqF2Bx8XFkQNsDC3Gtgz05DtCk7rmwlhfVF094jjlVjaupRllBvJuy%2F6o56ImelThur3rzBJ0u1eKYJnmUG5LqS4QXmvZDuixmP1ML1wo1BEB4P0yhoNAyC6F1xqhWxn8YQOXkd%2Fp%2BHlQiwbbUF2RUW2otfKaz2YAS0tw%2Bspqwq4dDR6WK0caVHbZ3dEuapDHBv%2F4mp9d0M4P4%2F2aSnZ5BxFaMEw%3D%3D"
     }
 }
 ```
@@ -82,7 +82,7 @@ params:
 ### 输入
 
 ```
-POST http://148.70.13.176/orders
+POST http://www.gofishfarm.com/orders
 
 headers:
     api-version:v1

@@ -1,6 +1,6 @@
 # 时长记录
 ```
-接口地址： http://148.70.13.176/times/{fisher_id}
+接口地址： http://www.gofishfarm.com/times/{fisher_id}
 请求方式： GET
 接口备注：
 ```
@@ -35,7 +35,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/times/67224273
+GET http://www.gofishfarm.com/times/67224273
 
 headers:
     api-version:v1

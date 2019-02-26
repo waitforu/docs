@@ -1,6 +1,6 @@
 # 我的渔币
 ```
-接口地址： http://148.70.13.176/integrations/{fisher_id}
+接口地址： http://www.gofishfarm.com/integrations/{fisher_id}
 请求方式： GET
 接口备注：
 ```

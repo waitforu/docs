@@ -1,6 +1,6 @@
 # 个人中心
 ```
-接口地址： http://148.70.13.176/users
+接口地址： http://www.gofishfarm.com/users
 请求方式： GET
 接口备注：
 ```

@@ -1,8 +1,8 @@
-# 进入钓鱼
+# 操作解决
 ```
-接口地址： http://www.gofishfarm.com/fishing
-请求方式： POST
-接口备注： 快速开始钓鱼接口不需要传fishery_id, fp_id, 进入渔场进行钓鱼时要带上fishery_id, 进入钓台进行钓鱼是要带上fp_id; status预留前期传1
+接口地址： http://admin_fnsjs.gofishfarm.com/api/fault/5
+请求方式： GET
+接口备注：
 ```
 ## 请求参数
 
@@ -14,12 +14,7 @@
 ## 描述
 
 ## 接收参数
-
-| 字段名称 | 字段类型 | 是否必须 | 默认值 | 说明 |
-|    -    |    -    |    -    |    -   |  -   |
-| status | int | 是 | 1 | 识别进入方式1 正式，2 测试 |
-| fishery_id | int | 否 | - | 渔场编号 |
-| fp_id | int | 否 | - | 钓台编号 |
+无
 
 ## 返回参数
 
@@ -49,64 +44,49 @@
 |　 　　├─on5| string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　├─off5 | string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　├─on6| string | 是 | 五路开指令binary流经过base64加密 |
-|　 　　├─off6 | string | 是 | 五路开指令binary流经过base64加密 |
-|　 　　└─alloff | string | 是 | 全关指令binary流经过base64加密 |
+|　 　　└─off6 | string | 是 | 五路开指令binary流经过base64加密 |
 
-## 范例
-
-### 发送信息
-
+## 待处理页
+### 输入
 ```
-POST http://www.gofishfarm.com/fishing
+GET http://admin_fnsjs.gofishfarm.com/api/fault/5
+
 headers:
 	api-version:v1
-	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
-	Content-Type : application/x-www-form-urlencoded
-body:
-	status : 2
-
+	Authorization : Bearer cE96R1JRcjhhTHV5bXNzR2xEaWtWYWlYbWVwOHdIYjk6OTk5OTp4ajdUZjZxQTF5Mjg0bTNYb2FSTDlVSlNLclpkenVPZw==
 ```
 
-### 回收信息
-
-```
+### 输出
+```json
 {
     "code": 200,
     "message": "success",
     "data": {
         "info": 0,
-        "fp_id": 1,
-        "dtu_id": "505437446",
-        "dtu_apikay": "vAcBwxQ5D4HiISRtxDwoQXxE=xI=",
-        "on_time": 150,
-        "off_time": 150,
-        "fish_integration": 100,
+        "fp_id": 5,
+        "dtu_id": "517238110",
+        "dtu_apikay": "21Gyq4=Sk0FloFckANE7MtFKFmw=",
         "lives": [
-            "rtmp://dytl.game.caizs.com/live/11111?bizid=37147&txSecret=4bd09fe542ddecc1d0ae42694b6ccb5f&txTime=5C320520"
+            "rtmp://dytl.game.caizs.com/live/5SXT00005?bizid=37147&txSecret=08cc216a98b7f8ab94fde68f6b7b5b69&txTime=5C763D49",
+            "rtmp://dytl.game.caizs.com/live/3SXT00003?bizid=37147&txSecret=76b6a43e54dca9f9883fb1a438b6fded&txTime=5C763D49"
         ],
         "commands": {
-            "on1": "/gUAAP8AmDU=",
-            "off1": "/gUAAAAA2cU=",
-            "on2": "/gUAAf8AyfU=",
-            "off2": "/gUAAQAAiAU=",
-            "on3": "/gUAAv8AOfU=",
-            "off3": "/gUAAgAAeAU=",
-            "on4": "/gUAA/8AaDU=",
-            "off4": "/gUAAwAAKcU=",
-            "on5": "/gUABP8A2fQ=",
-            "off5": "/gUABAAAmAQ=",
-            "on6": "/gUABf8AiDQ=",
-            "off6": "/gUABQAAycQ=",
-            "alloff": "/g8AAAAFAQAgUg=="
-        }
-    }
-}
-或者
-{
-    "code": 200,
-    "message": "您的剩余时长不足，请先充值！",
-    "data": {
-        "info": 1,
+            "on1": "AwUAAP8Ajdg=",
+            "off1": "AwUAAAAAzCg=",
+            "on2": "AwUAAf8A3Bg=",
+            "off2": "AwUAAQAAneg=",
+            "on3": "AwUAAv8ALBg=",
+            "off3": "AwUAAgAAbeg=",
+            "on4": "AwUAA/8Afdg=",
+            "off4": "AwUAAwAAPCg=",
+            "on5": "AwUABP8AzBk=",
+            "off5": "AwUABAAAjek=",
+            "on6": "AwUABf8Andk=",
+            "off6": "AwUABQAA3Ck="
+        },
+        "on_time": 0,
+        "off_time": 0,
+        "fish_integration": 0
     }
 }
 ```

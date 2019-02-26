@@ -1,6 +1,6 @@
 # 获取等时长钓鱼数榜单
 ```
-接口地址： http://148.70.13.176/rank/ave
+接口地址： http://www.gofishfarm.com/rank/ave
 请求方式： GET
 接口备注：
 ```

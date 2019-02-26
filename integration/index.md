@@ -1,6 +1,6 @@
 # 渔币兑换记录
 ```
-接口地址： http://148.70.13.176/integrations
+接口地址： http://www.gofishfarm.com/integrations
 请求方式： GET
 接口备注：
 ```
@@ -34,7 +34,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/integrations
+GET http://www.gofishfarm.com/integrations
 
 headers:
 	api-version:v1

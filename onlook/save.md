@@ -1,6 +1,6 @@
 # 围观接口
 ```
-接口地址： http://148.70.13.176/onlooks
+接口地址： http://www.gofishfarm.com/onlooks
 请求方式： POST
 接口备注： 前去围观接口不需要传fishery_id, field, 进入钓台已满的渔场进行围观时要带上fishery_id, 在围观页面搜索钓手号或手机号时要带上field;
 ```
@@ -40,7 +40,7 @@
 ### 发送信息
 
 ```
-POST http://148.70.13.176/onlooks
+POST http://www.gofishfarm.com/onlooks
 headers:
 	api-version:v1
 	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=

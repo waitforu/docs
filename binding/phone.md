@@ -1,6 +1,6 @@
 # 绑定手机号
 ```
-接口地址： http://148.70.13.176/binding/phone
+接口地址： http://www.gofishfarm.com/binding/phone
 请求方式： POST
 接口备注：
 ```
@@ -41,7 +41,7 @@
 
 ### 输入
 ```
-POST http://148.70.13.176/user/login
+POST http://www.gofishfarm.com/user/login
 headers:
 	api-version: v1
 	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=

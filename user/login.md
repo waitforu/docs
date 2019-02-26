@@ -1,6 +1,6 @@
 # 用户登录
 ```
-接口地址： http://148.70.13.176/user/login
+接口地址： http://www.gofishfarm.com/user/login
 请求方式： POST
 接口备注： 
 ```
@@ -62,7 +62,7 @@
 ### 输入1
 
 ```
-POST http://148.70.13.176/user/login
+POST http://www.gofishfarm.com/user/login
 headers:
 	api-version: v1
 posts:
@@ -73,7 +73,7 @@ posts:
 
 ### 输入2
 ```
-POST http://148.70.13.176/user/login
+POST http://www.gofishfarm.com/user/login
 headers:
 	api-version: v1
 posts:
@@ -86,7 +86,7 @@ posts:
 
 ### 输入3
 ```
-POST http://148.70.13.176/user/login
+POST http://www.gofishfarm.com/user/login
 headers:
 	api-version: v1
 posts:

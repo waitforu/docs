@@ -1,6 +1,6 @@
 # 粉丝页列表
 ```
-接口地址： http://148.70.13.176/fans
+接口地址： http://www.gofishfarm.com/fans
 请求方式： GET
 接口备注：
 ```
@@ -38,7 +38,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/fans
+GET http://www.gofishfarm.com/fans
 
 headers:
 	api-version:v1

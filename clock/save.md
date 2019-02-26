@@ -1,6 +1,6 @@
 # 用户签到
 ```
-接口地址： http://148.70.13.176/clocks
+接口地址： http://www.gofishfarm.com/clocks
 请求方式： POST
 接口备注：
 ```
@@ -31,7 +31,7 @@
 
 ### 输入
 ```
-POST http://148.70.13.176/clocks
+POST http://www.gofishfarm.com/clocks
 
 headers:
 	api-version:v1

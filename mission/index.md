@@ -1,6 +1,6 @@
 # 我的时长
 ```
-接口地址： http://148.70.13.176/missions
+接口地址： http://www.gofishfarm.com/missions
 请求方式： GET
 接口备注：
 ```
@@ -38,7 +38,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/missions
+GET http://www.gofishfarm.com/missions
 headers:
 	api-version:v1
 	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=

@@ -1,7 +1,7 @@
-# 退出钓鱼
+# 故障处理
 ```
-接口地址： http://www.gofishfarm.com/fishing/{$fp_id}
-请求方式： DELETE
+接口地址： http://admin_fnsjs.gofishfarm.com/api/fault/5
+请求方式： POST
 接口备注： 
 ```
 ## 请求参数
@@ -10,13 +10,15 @@
 |    -    |    -    |    -    |  -   |   -   |  -   |
 | api-version | string | 是 | header | v1 | api版本号 |
 | Authorization | string | 是 | header | - | 验证令牌 |
-| fp_id | int | 是 | params | - | 钓台编号 |
 
 ## 描述
 
-## 接收参数
+## 接收参数 —— 手机登录
 
-无
+| 字段名称 | 字段类型 | 是否必须 | 默认值 | 说明 |
+|    -    |    -    |    -    |    -   |  -   |
+| details | int | 是 | - | 问题编码 |
+| solution | string | 否 | - | 详细描述 |
 
 ## 返回参数
 
@@ -24,30 +26,29 @@
 |    -    |    -    |    -    |   -   |
 | code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
 | message | string | 是 | 返回信息简略说明 |
-| data | array | 否 | 返回信息集，不存在则无返回信息 |
+| data | array | 是 | 返回信息集，不存在则无返回信息 |
 
 ## 范例
 
-### 发送信息
+### 输入
 
 ```
-DELETE http://www.gofishfarm.com/fishing/1
+POST http://admin_fnsjs.gofishfarm.com/api/fault/5
 headers:
-	api-version:v1
-	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
-
+	api-version: v1
+posts:
+	fp_id: 5
 ```
 
-### 回收信息
-
-```
+### 输出
+```json
 {
     "code": 200,
     "message": "success"
 }
 或者
 {
-    "code": 403,
-    "message": "您未进行钓鱼"
+    "code": 422,
+    "message": "故障已修复"
 }
 ```

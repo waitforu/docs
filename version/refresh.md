@@ -1,6 +1,6 @@
 # 刷新accessToken
 ```
-接口地址： http://148.70.13.176/refresh/{refresh_token}/{apikey}
+接口地址： http://www.gofishfarm.com/refresh/{refresh_token}/{apikey}
 请求方式： GET
 接口备注：
 ```

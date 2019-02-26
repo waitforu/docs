@@ -1,6 +1,6 @@
 # 获取COS临时密钥
 ```
-接口地址： http://148.70.13.176/cos
+接口地址： http://www.gofishfarm.com/cos
 请求方式： GET
 接口备注：
 ```

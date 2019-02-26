@@ -1,6 +1,6 @@
 # 绑定/取绑微信
 ```
-接口地址： http://148.70.13.176/binding/wechat
+接口地址： http://www.gofishfarm.com/binding/wechat
 请求方式： POST
 接口备注：
 ```
@@ -34,7 +34,7 @@
 
 ### 输入
 ```
-POST http://148.70.13.176/binding/wechat
+POST http://www.gofishfarm.com/binding/wechat
 headers:
 	api-version: v1
 	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=

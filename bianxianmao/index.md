@@ -1,6 +1,6 @@
 # 获取变现猫
 ```
-接口地址： http://148.70.13.176/bianxianmao
+接口地址： http://www.gofishfarm.com/bianxianmao
 请求方式： GET
 接口备注： 
 ```
@@ -33,7 +33,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/bianxianmao
+GET http://www.gofishfarm.com/bianxianmao
 
 headers:
 	api-version:v1

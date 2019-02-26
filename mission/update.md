@@ -1,6 +1,6 @@
 # 领取奖励
 ```
-接口地址： http://148.70.13.176/missions/{$m_id}
+接口地址： http://www.gofishfarm.com/missions/{$m_id}
 请求方式： PUT
 接口备注：
 ```
@@ -34,7 +34,7 @@
 
 ### 输入
 ```
-PUT http://148.70.13.176/missions/10001
+PUT http://www.gofishfarm.com/missions/10001
 
 headers:
 	api-version:v1

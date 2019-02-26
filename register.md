@@ -1,6 +1,6 @@
 # 注册设备ID
 ```
-接口地址： http://148.70.13.176/register
+接口地址： http://www.gofishfarm.com/register
 请求方式： POST
 接口备注：
 ```

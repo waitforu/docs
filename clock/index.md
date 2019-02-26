@@ -1,6 +1,6 @@
 # 签到首页/今日是否以前的
 ```
-接口地址： http://148.70.13.176/clocks
+接口地址： http://www.gofishfarm.com/clocks
 请求方式： GET
 接口备注：
 ```
@@ -33,7 +33,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/clocks
+GET http://www.gofishfarm.com/clocks
 
 headers:
 	api-version:v1

@@ -1,6 +1,6 @@
 # 邀请页
 ```
-接口地址： http://148.70.13.176/invitations/{$fisher_id}
+接口地址： http://www.gofishfarm.com/invitations/{$fisher_id}
 请求方式： GET
 接口备注：
 ```
@@ -33,7 +33,7 @@
 
 ### 输入
 ```
-GET http://148.70.13.176/invitations/67224273
+GET http://www.gofishfarm.com/invitations/67224273
 headers:
 	api-version:v1
 	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=

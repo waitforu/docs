@@ -1,6 +1,6 @@
 # 充值记录
 ```
-接口地址： http://148.70.13.176/orders
+接口地址： http://www.gofishfarm.com/orders
 请求方式： GET
 接口备注：
 ```
@@ -36,7 +36,7 @@
 ### 输入
 
 ```
-GET http://148.70.13.176/orders
+GET http://www.gofishfarm.com/orders
 
 headers:
 	api-version:v1

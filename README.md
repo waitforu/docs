@@ -44,6 +44,8 @@ in: header
 | 430   | 任务列表，链接需要跳转 | 同400 |
 | 500   | 服务器错误 | 同400 |
 
+## [后台API文档](https://github.com/waitforu/docs/tree/master/backend)
+
 ## 目录
 
 - [Socket](https://github.com/waitforu/docs/blob/master/socket.md)

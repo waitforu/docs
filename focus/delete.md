@@ -1,6 +1,6 @@
 # 取关钓手
 ```
-接口地址： http://148.70.13.176/focuss/{focus_id}
+接口地址： http://www.gofishfarm.com/focuss/{focus_id}
 请求方式： DELETE
 接口备注：
 ```
@@ -32,7 +32,7 @@
 
 ### 输入
 ```
-DELETE http://148.70.13.176/focuss/9678212
+DELETE http://www.gofishfarm.com/focuss/9678212
 
 headers:
 	api-version:v1

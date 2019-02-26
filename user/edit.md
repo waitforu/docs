@@ -1,6 +1,6 @@
 # 个人信息
 ```
-接口地址： http://148.70.13.176/users/{fisher_id}/edit
+接口地址： http://www.gofishfarm.com/users/{fisher_id}/edit
 请求方式： GET
 接口备注：
 ```
