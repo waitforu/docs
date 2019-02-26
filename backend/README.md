@@ -46,8 +46,10 @@ in: header
 
 ## 目录
 
-- [首页](https://github.com/waitforu/docs/blob/master/index/index.md)
+- [首页](https://github.com/waitforu/docs/blob/master/backend/index/index.md)
 - [登陆](https://github.com/waitforu/docs/blob/master/backend/login/save.md)
-- [版本内容](https://github.com/waitforu/docs/tree/master/version)
-	- [获取版本号](https://github.com/waitforu/docs/tree/master/version/version.md)
-	- [刷新token](https://github.com/waitforu/docs/tree/master/version/refresh.md)
+- [上报故障](https://github.com/waitforu/docs/tree/master/backend/report/save.md)
+- [故障](https://github.com/waitforu/docs/tree/master/backend/fault)
+	- [故障问题](https://github.com/waitforu/docs/tree/master/backend/fault/create.md)
+	- [故障处理](https://github.com/waitforu/docs/tree/master/backend/fault/update.md)
+	- [操作解决](https://github.com/waitforu/docs/tree/master/backend/fault/read.md)
