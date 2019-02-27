@@ -1,7 +1,7 @@
 # Socket
 ## 钓鱼者
 ```
-请求地址: ws://148.70.13.176:9501?fishing_id={fishing_id}&ws_fp_id={fp_id}&access_token={access_token}
+请求地址: ws://212.64.81.173:9501?fishing_id={fishing_id}&ws_fp_id={fp_id}&access_token={access_token}
 ```
 ### 请求参数
 
@@ -30,7 +30,7 @@
 
 #### 链接地址
 ```
-wsUrl = "ws://148.70.13.176:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
+wsUrl = "ws://212.64.81.173:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
 ```
 
 #### 首次进入返回值
@@ -90,7 +90,7 @@ onclose响应事件，此时前端应关闭页面
 
 ## 围观
 ```
-请求地址: ws://148.70.13.176:9501?onlook_id={onlook_id}&ws_fp_id={fp_id}&access_token={access_token}
+请求地址: ws://212.64.81.173:9501?onlook_id={onlook_id}&ws_fp_id={fp_id}&access_token={access_token}
 ```
 ### 请求参数
 
@@ -120,7 +120,7 @@ onclose响应事件，此时前端应关闭页面
 
 #### 链接地址
 ```
-wsUrl = "ws://148.70.13.176:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
+wsUrl = "ws://212.64.81.173:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
 ```
 
 #### 首次进入返回值

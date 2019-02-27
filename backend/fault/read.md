@@ -1,6 +1,6 @@
 # 操作解决
 ```
-接口地址： http://admin_fnsjs.gofishfarm.com/api/fault/5
+接口地址： http://admin_fnsjs.gofishfarm.com/api/fault/{id}
 请求方式： GET
 接口备注：
 ```
@@ -10,6 +10,7 @@
 |    -    |    -    |    -    |  -   |   -   |  -   |
 | api-version | string | 是 | header | v1 | api版本号 |
 | Authorization | string | 是 | header | - | 验证令牌 |
+| id | int | 是 | params | - | 故障ID |
 
 ## 描述
 
