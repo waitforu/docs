@@ -18,11 +18,11 @@
 | 字段名称 | 字段类型 | 是否必须 | 说明 |
 |    -    |    -    |    -    |   -   |
 | id | int | 否 | 故障ID |
-| reported_at | int | 否 | 上报时间 |
+| reported_at | string | 否 | 上报时间 |
 | fp_id | int | 否 | 钓台ID |
-| name | int | 否 | 渔场名称 |
-| des | int | 否 | 详细描述 |
-| msg | int | 否 | 提示语 |
+| name | string | 否 | 渔场名称 |
+| des | string | 否 | 详细描述 |
+| msg | string | 否 | 提示语 |
 | onheartbeat | boolean | 否 | 心跳反应验证 |
 
 ### 范例
