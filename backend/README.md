@@ -47,7 +47,7 @@ in: header
 ## 目录
 
 - [推送Socket](https://github.com/waitforu/docs/blob/master/backend/socket.md)
-- [首页](https://github.com/waitforu/docs/blob/master/backend/index/index.md)
+- [首页及全部页](https://github.com/waitforu/docs/blob/master/backend/index/index.md)
 - [登陆](https://github.com/waitforu/docs/blob/master/backend/login/save.md)
 - [上报故障](https://github.com/waitforu/docs/tree/master/backend/report/save.md)
 - [故障](https://github.com/waitforu/docs/tree/master/backend/fault)
