@@ -33,6 +33,7 @@
 |　│　　├─reported_at | string | 否 | 上报故障时间 |
 |　│　　├─fp_id | string | 否 | 钓台编号 |
 |　│　　├─name | string | 否 | 钓场名称 |
+|　│　　├─solved_at | string | 否 | 处理时间 |
 |　│　　└─des | string | 是 | 故障描述 |
 |　├─page | int | 否 | 当前页码——待处理没有该信息 |
 |　├─total | int | 否 | 全部条目——待处理没有该信息 |
@@ -63,6 +64,7 @@ headers:
                 "reported_at": "02.27 16:00:14",
                 "fp_id": 5,
                 "name": "测试渔场",
+                "solved_at": "02.27 16:00:14",
                 "des": "操作故障"
             }
         ],
