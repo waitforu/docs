@@ -1,7 +1,7 @@
 # 故障处理
 ```
 接口地址： http://admin_fnsjs.gofishfarm.com/api/fault/{id}
-请求方式： POST
+请求方式： PUT
 接口备注： 
 ```
 ## 请求参数
@@ -34,11 +34,12 @@
 ### 输入
 
 ```
-POST http://admin_fnsjs.gofishfarm.com/api/fault/5
+PUT http://admin_fnsjs.gofishfarm.com/api/fault/5
 headers:
 	api-version: v1
 posts:
-	fp_id: 5
+	details: 1
+	solution: "电机失灵"
 ```
 
 ### 输出
