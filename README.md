@@ -10,6 +10,12 @@
 | header | 在头部 |  |
 | params | 在衔接在链接上 |
 
+### 链接
+
+> 测试: http://148.70.13.176
+
+> 正式: http://www.gofishfarm.com
+
 ### 公共头
 
 #### api-version
