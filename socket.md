@@ -14,6 +14,7 @@
 ### 接收参数
 
 - [钓手心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#钓手心跳输入)
+- [限位推送](https://github.com/waitforu/docs/blob/master/socket.md#限位推送)
 
 ### 返回参数
 
@@ -25,6 +26,7 @@
 | ws_fish_num | int | 否 | 钓鱼数 |
 | onheartbeat | boolean | 否 | 心跳反应验证 |
 | timestr | string | 否 | 剩余时长提示 |
+| ws_limit | int | 否 | 只有新手指引时才有，1 提竿限位响应，2 上饵限位响应，3 抛竿限位响应 |
 
 ### 范例
 
@@ -87,6 +89,12 @@ $ws_client->send('heartbeat');
 onclose响应事件，此时前端应关闭页面
 ```
 
+#### 限位推送
+```
+{
+	"ws_limit": 1, // 1 是提竿限位，2 上饵限位，4 抛竿限位
+}
+```
 
 ## 围观
 ```
