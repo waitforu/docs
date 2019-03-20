@@ -112,3 +112,6 @@ in: header
 	- [获取变现猫免登录URL](https://github.com/waitforu/docs/tree/master/bianxianmao/index.md)
 - [故障](https://github.com/waitforu/docs/tree/master/fault)
 	- [用户报障](https://github.com/waitforu/docs/tree/master/fault/save.md)
+- [新手指南](https://github.com/waitforu/docs/tree/master/novice)
+	- [新手指南步骤时长](https://github.com/waitforu/docs/tree/master/novice/index.md)
+	- [完成新手指南](https://github.com/waitforu/docs/tree/master/novice/index.md)
