@@ -15,6 +15,7 @@
 
 - [钓手心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#钓手心跳输入)
 - [限位推送](https://github.com/waitforu/docs/blob/master/socket.md#限位推送)
+- [发送消息 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#发送消息-垂钓者)
 
 ### 返回参数
 
@@ -27,6 +28,10 @@
 | onheartbeat | boolean | 否 | 心跳反应验证 |
 | timestr | string | 否 | 剩余时长提示 |
 | ws_limit | int | 否 | 只有新手指引时才有，1 提竿限位响应，2 上饵限位响应，3 抛竿限位响应 |
+| messages | array | 否 | 消息内容 |
+|　├─name | string | 是 | 昵称 |
+|　├─msg | string | 是 | 消息主体 |
+|　└─msg_type | string | 是 | 消息类型: message - 文本 |
 
 ### 范例
 
@@ -55,6 +60,27 @@ $ws_client->send('heartbeat');
 {
 	"onheartbeat": true, // 只需要更改onheartbeat的值
 }
+```
+
+#### 发送消息-垂钓者
+```
+客户端发送:
+var data = {
+	"op_type": "talk"
+	, "msg": "You are right"
+	, "msg_type": "message"
+};
+$ws_client->send(JSON.stringify(data));
+
+服务端推送内容:
+{
+	"messages":{
+		"name":"sf_BGROT"  // 发言者名称，
+		,"msg":"you are right" // 消息内容
+		,"msg_type":"message" // 消息类型
+	}
+}
+该钓台所有人都会收到该信息
 ```
 
 #### 剩余时长不足时
@@ -113,6 +139,7 @@ onclose响应事件，此时前端应关闭页面
 - [心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#心跳输入)
 - [切换围观 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#切换围观钓台输入)
 - [点赞输入 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#自己点赞)
+- [发送消息 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#发送消息-围观者)
 
 ### 返回参数
 
@@ -123,6 +150,10 @@ onclose响应事件，此时前端应关闭页面
 | ws_likes | int | 否 | 点赞人数 |
 | ws_fish_num | int | 否 | 钓鱼数 |
 | onheartbeat | boolean | 否 | 心跳反应验证 |
+| messages | array | 否 | 消息内容 |
+|　├─name | string | 是 | 昵称 |
+|　├─msg | string | 是 | 消息主体 |
+|　└─msg_type | string | 是 | 消息类型: message - 文本 |
 
 ### 范例
 
@@ -151,6 +182,27 @@ $ws_client->send('heartbeat');
 {
 	"onheartbeat": true, // 只需要更改onheartbeat的值
 }
+```
+
+#### 发送消息-围观者
+```
+客户端发送:
+var data = {
+	"op_type": "talk"
+	, "msg": "You are right"
+	, "msg_type": "message"
+};
+$ws_client->send(JSON.stringify(data));
+
+服务端推送内容:
+{
+	"messages":{
+		"name":"sf_BGROT"  // 发言者名称，
+		,"msg":"you are right" // 消息内容
+		,"msg_type":"message" // 消息类型
+	}
+}
+该钓台所有人都会收到该信息
 ```
 
 #### 有围观人进入时
