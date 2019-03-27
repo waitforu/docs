@@ -67,8 +67,8 @@ in: header
 	- [获取平均时长](https://github.com/waitforu/docs/tree/master/rank/ave.md)
 - [用户信息](https://github.com/waitforu/docs/tree/master/user)
 	- [用户登录](https://github.com/waitforu/docs/tree/master/user/login.md)      **登录后多一条是否已绑定手机号字段**
-	- [个人主页](https://github.com/waitforu/docs/tree/master/user/read.md)
-	- [个人中心](https://github.com/waitforu/docs/tree/master/user/index.md)
+	- [个人主页](https://github.com/waitforu/docs/tree/master/user/read.md) **添加总钓鱼数**
+	- [个人中心](https://github.com/waitforu/docs/tree/master/user/index.md) **添加总钓鱼数**
 	- [个人信息](https://github.com/waitforu/docs/tree/master/user/edit.md)
 	- [修改个人信息](https://github.com/waitforu/docs/tree/master/user/update.md)
 	- [用户登出](https://github.com/waitforu/docs/tree/master/user/logout.md)

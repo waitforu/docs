@@ -32,6 +32,7 @@
 |　├─phone | string | 是 | 手机号 |
 |　├─sex | int | 是 | 性别，1 男，2 女 |
 |　├─sex_zh | string | 是 | 性别中文 |
+|　├─total_fishing | int | 是 | 总钓鱼数 |
 |　├─likes | int | 是 | 点赞数 |
 |　├─focus | int | 是 | 关注数 |
 |　├─fans | int | 是 | 粉丝数 |
@@ -65,6 +66,7 @@ headers:
         "phone": "18267857539",
         "sex": 1,
         "sex_zh": "男",
+        "total_fishing": 15,
         "likes": 0,
         "focus": 5,
         "fans": 0,
