@@ -12,7 +12,7 @@
 
 ### 链接
 
-> 测试: http://148.70.13.176
+> 测试: http://148.70.13.176 或者 http://dev-api.gofishfarm.com
 
 > 正式: http://www.gofishfarm.com
 
