@@ -36,6 +36,14 @@
 ### 范例
 
 #### 链接地址
+> 测试
+
+```
+wsUrl = "ws://148.70.13.176:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
+```
+
+> 正式
+
 ```
 wsUrl = "ws://212.64.81.173:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
 ```
@@ -158,6 +166,15 @@ onclose响应事件，此时前端应关闭页面
 ### 范例
 
 #### 链接地址
+
+> 测试
+
+```
+wsUrl = "ws://148.70.13.176:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
+```
+
+> 正式
+
 ```
 wsUrl = "ws://212.64.81.173:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
 ```
