@@ -84,8 +84,9 @@ $ws_client->send(JSON.stringify(data));
 {
 	"messages":{
 		"name":"sf_BGROT"  // 发言者名称，
-		,"msg":"you are right" // 消息内容
-		,"msg_type":"message" // 消息类型
+		, "avatar": "https://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/default/icon.png" // 发言者头像
+		, "msg": "you are right" // 消息内容
+		, "msg_type": "message" // 消息类型
 	}
 }
 该钓台所有人都会收到该信息
@@ -215,6 +216,7 @@ $ws_client->send(JSON.stringify(data));
 {
 	"messages":{
 		"name":"sf_BGROT"  // 发言者名称，
+		, "avatar": "https://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/default/icon.png" // 发言者头像
 		,"msg":"you are right" // 消息内容
 		,"msg_type":"message" // 消息类型
 	}
