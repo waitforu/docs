@@ -55,7 +55,7 @@ in: header
 ## 目录
 
 - [Socket](https://github.com/waitforu/docs/blob/master/socket.md)
-
+- [苹果支付支付结束处理](https://github.com/waitforu/docs/blob/master/applepay/save.md)
 - [首页](https://github.com/waitforu/docs/blob/master/index/index.md)
 - [发送短信](https://github.com/waitforu/docs/blob/master/send_sms.md)
 - [注册设备ID](https://github.com/waitforu/docs/blob/master/register.md)
@@ -82,10 +82,10 @@ in: header
 	- [取关钓手](https://github.com/waitforu/docs/tree/master/focus/delete.md)
 	- [关注列表](https://github.com/waitforu/docs/tree/master/focus/index.md)
 - [时长](https://github.com/waitforu/docs/tree/master/time)
-	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md)
-	- [**时长记录**](https://github.com/waitforu/docs/tree/master/time/read.md) **NEW**
+	- [我的时长](https://github.com/waitforu/docs/tree/master/time/index.md) **【针对苹果套餐进行部分数据修改】**
+	- [**时长记录**](https://github.com/waitforu/docs/tree/master/time/read.md)
 - [订单](https://github.com/waitforu/docs/tree/master/orders)
-	- [创建订单](https://github.com/waitforu/docs/tree/master/orders/save.md)
+	- [创建订单](https://github.com/waitforu/docs/tree/master/orders/save.md) **【新增苹果支付创建订单】**
 	- [充值记录](https://github.com/waitforu/docs/tree/master/orders/index.md)
 - [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
 	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼** 

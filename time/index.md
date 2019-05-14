@@ -10,6 +10,7 @@
 |    -    |    -    |    -    |  -   |   -   |  -   |
 | api-version | string | 是 | header | v1 | api版本号 |
 | Authorization | string | 是 | header | - | 验证令牌 |
+| app_type | string | 否 | param | android | 对应APP类型，安卓：android，iOS：ios |
 
 ## 描述
 
@@ -27,7 +28,7 @@
 |　├─time | float | 是 | 剩余时长 |
 |　├─discount | string | 是 | 优惠优惠 空字符串没有首充优惠，'八'有 |
 |　└─packages | array | 是 | 套餐列表 |
-|　 　　├─package_id | string | 是 | 套餐编号 |
+|　 　　├─package_id | string | 是 | 套餐编号/iOS对应产品ID |
 |　 　　├─name | string | 是 | 套餐名称 |
 |　 　　├─details | string | 是 | 套餐描述 |
 |　 　　├─price | float | 是 | 套餐单价价格 |
@@ -37,9 +38,68 @@
 
 ## 范例
 
+### 苹果输入
+```
+GET http://dev-api.gofishfarm.com/times
+headers:
+    api-version:v1
+    Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+params:
+    app_type: ios
+```
+### 输出
+```
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "time": 58.98,
+        "discount": "",
+        "packages": [
+            {
+                "package_id": "iap00001",
+                "name": "1小时套餐",
+                "details": "1h/￥12",
+                "price": 12,
+                "time": 1,
+                "discount": 100,
+                "thrift_price": 0
+            },
+            {
+                "package_id": "iap00002",
+                "name": "3小时套餐",
+                "details": "3h/￥30",
+                "price": 30,
+                "time": 3,
+                "discount": 100,
+                "thrift_price": 6
+            },
+            {
+                "package_id": "iap00003",
+                "name": "5小时套餐",
+                "details": "5h/￥50",
+                "price": 50,
+                "time": 5,
+                "discount": 100,
+                "thrift_price": 10
+            },
+            {
+                "package_id": "iap00004",
+                "name": "10小时套餐",
+                "details": "10h/￥88",
+                "price": 88,
+                "time": 10,
+                "discount": 100,
+                "thrift_price": 32
+            }
+        ]
+    }
+}
+```
+
 ### 输入
 ```
-GET http://148.70.13.176/times
+GET http://dev-api.gofishfarm.com/times
 headers:
     api-version:v1
     Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=

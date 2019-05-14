@@ -23,7 +23,7 @@
 
 ## 返回参数
 
-> type = 1
+> type = 1 支付宝支付
 
 | 字段名称 | 字段类型 | 是否必须 | 说明 |
 |    -    |    -    |    -    |   -   |
@@ -32,7 +32,20 @@
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
 |　└─orderInfo | string | 是 | alipay请求字符串 |
 
-> type = 2
+> type = 2 微信支付
+
+| 字段名称 | 字段类型 | 是否必须 | 说明 |
+|    -    |    -    |    -    |   -   |
+| code | int | 是 | [详情查阅README](https://github.com/waitforu/docs/blob/master/README.md#%E9%83%A8%E5%88%86%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AFcode%E8%A1%A8) |
+| message | string | 是 | 返回信息简略说明 |
+| data | array | 否 | 返回信息集，不存在则无返回信息 |
+|　├─prepayid | string | 是 | 微信返回的支付交易会话ID |
+|　├─package_str | string | 是 | 扩展字段, 暂填写固定值Sign=WXPay |
+|　├─noncestr | string | 是 | 随机字符串 |
+|　├─timestamp | int | 是 | 时间戳 |
+|　└─sign | string | 是 | 签名 |
+
+> type = 3 苹果支付
 
 | 字段名称 | 字段类型 | 是否必须 | 说明 |
 |    -    |    -    |    -    |   -   |
@@ -105,6 +118,38 @@ params:
         "noncestr": "unRvmYCFOZaheyZH",
         "timestamp": 1547086519,
         "sign": "1787A47A0B5D888EE0315F411DFFF71198BE0ECFB06BDC3876FE995F13ADC972"
+    }
+}
+```
+
+> type = 3
+
+### 输入
+
+```
+POST http://www.gofishfarm.com/orders
+
+headers:
+    api-version:v1
+    Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
+    Content-Type : application/x-www-form-urlencoded
+params:
+    package_id: iap00001
+    pay_way: 3
+    number: 1
+```
+
+### 输出
+```json
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "order_id": "2019051416423002540877067224273",
+        "phone": "18267857539",
+        "buyer": "67224273",
+        "total_pay": 12,
+        "buy_time": 3600
     }
 }
 ```
