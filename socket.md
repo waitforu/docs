@@ -16,6 +16,7 @@
 - [钓手心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#钓手心跳输入)
 - [限位推送](https://github.com/waitforu/docs/blob/master/socket.md#限位推送)
 - [发送消息 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#发送消息-垂钓者)
+- [动作完成指令推送](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送) **new**
 
 ### 返回参数
 
@@ -96,6 +97,14 @@ $ws_client->send(JSON.stringify(data));
 ```
 {
 	"timestr": "您的剩余时长不足10分钟", // 如果时长不够时会产生该字段
+}
+```
+
+#### 动作完成指令推送
+```
+{
+	"now_cmd"： "03", // 当前指令位置
+	"now_status": "02" // 指令状态 00 下发 01 上传中 02 已完成
 }
 ```
 

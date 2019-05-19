@@ -37,7 +37,7 @@
 |　├─fish_integration | int | 是 | 每条鱼对应可获渔币 |
 |　├─lives | array | 是 | 钓台关联所有直播流地址集 |
 |　│　　└─下标 | string | 是 | 直播流地址,第一个地址为默认播放地址 |
-|　└─commands | array | 是 | 指令集 |
+|　└─commands | array | 是 | 指令集(send和on off选其中一组 新手场用send 高手场用on off) |
 |　 　　├─on1| string | 是 | 一路开指令binary流经过base64加密 |
 |　 　　├─off1 | string | 是 | 一路关指令binary流经过base64加密 |
 |　 　　├─on2| string | 是 | 二路开指令binary流经过base64加密 |
@@ -50,7 +50,16 @@
 |　 　　├─off5 | string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　├─on6| string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　├─off6 | string | 是 | 五路开指令binary流经过base64加密 |
-|　 　　└─alloff | string | 是 | 全关指令binary流经过base64加密 |
+|　 　　├─alloff | string | 是 | 全关指令binary流经过base64加密 |
+|　 　　├─ - | - | - | - |
+|　 　　├─send3 | string | 是 | 复位指令binary流经过base64加密 |
+|　 　　├─send4 | string | 是 | 上饵指令binary流经过base64加密 |
+|　 　　├─send5 | string | 是 | 抖饵指令binary流经过base64加密 |
+|　 　　├─send6 | string | 是 | 垂钓指令binary流经过base64加密 |
+|　 　　├─send7 | string | 是 | 刺鱼指令binary流经过base64加密 |
+|　 　　├─send8 | string | 是 | 提鱼指令binary流经过base64加密 |
+|　 　　├─send9 | string | 是 | 抄鱼指令binary流经过base64加密 |
+|　 　　└─send10 | string | 是 | 摘鱼指令binary流经过base64加密 |
 
 ## 范例
 
@@ -84,7 +93,7 @@ body:
         "lives": [
             "rtmp://dytl.game.caizs.com/live/11111?bizid=37147&txSecret=4bd09fe542ddecc1d0ae42694b6ccb5f&txTime=5C320520"
         ],
-        "commands": {
+        "commands": { // 原指令
             "on1": "/gUAAP8AmDU=",
             "off1": "/gUAAAAA2cU=",
             "on2": "/gUAAf8AyfU=",
@@ -98,7 +107,17 @@ body:
             "on6": "/gUABf8AiDQ=",
             "off6": "/gUABQAAycQ=",
             "alloff": "/g8AAAAFAQAgUg=="
-        }
+        },
+        "commands": { // 新手场指令
+            "send3": "AAABAwA=",
+            "send4": "AAABBAA=",
+            "send5": "AAABBQA=",
+            "send6": "AAABBgA=",
+            "send7": "AAABBwA=",
+            "send8": "AAABCAA=",
+            "send9": "AAABCQA=",
+            "send10": "AAABCgA="
+        },
     }
 }
 或者

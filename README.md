@@ -88,7 +88,7 @@ in: header
 	- [创建订单](https://github.com/waitforu/docs/tree/master/orders/save.md) **【新增苹果支付创建订单】**
 	- [充值记录](https://github.com/waitforu/docs/tree/master/orders/index.md)
 - [钓鱼](https://github.com/waitforu/docs/tree/master/fishing)
-	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼** 
+	- [进入钓鱼](https://github.com/waitforu/docs/tree/master/fishing/save.md) **包括快速开始钓鱼，选择渔场钓鱼，选择钓台钓鱼** **新增新手场指令**
 	- [~~退出钓鱼~~](https://github.com/waitforu/docs/tree/master/fishing/delete.md)
 - [任务相关](https://github.com/waitforu/docs/tree/master/mission)
 	- [获取任务列表](https://github.com/waitforu/docs/tree/master/mission/index.md)
