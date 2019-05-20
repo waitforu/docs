@@ -30,6 +30,7 @@
 | data | array | 否 | 返回信息集，不存在则无返回信息 |
 |　├─info | int | 是 | **用户跳转 0 不跳转, 1 跳转充值页, 2 跳转新手引导页, 3 跳转围观** |
 |　├─fp_id | int | 是 | 钓台编号 |
+|　├─type | int | 是 | 钓台类型 1 高手场(老五键式) 2新手场(新8键式) |
 |　├─dtu_id | string | 是 | DTU设备ID |
 |　├─dtu_apikey | string | 是 | DTU设备api-key |
 |　├─on_time | int | 是 | 开响应时间 |
