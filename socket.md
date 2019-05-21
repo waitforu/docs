@@ -16,7 +16,8 @@
 - [钓手心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#钓手心跳输入)
 - [限位推送](https://github.com/waitforu/docs/blob/master/socket.md#限位推送)
 - [发送消息 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#发送消息-垂钓者)
-- [动作完成指令推送](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送) **new**
+- [**广播**](https://github.com/waitforu/docs/blob/master/socket.md#广播) **new**
+- [**动作完成指令推送**](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送) **new**
 
 ### 返回参数
 
@@ -93,7 +94,22 @@ $ws_client->send(JSON.stringify(data));
 该钓台所有人都会收到该信息
 ```
 
-#### 剩余时长不足时
+#### 广播
+```
+{
+	"bc_content": "倒计时10分钟开始",
+	"btn_name": "",
+	"btn_link": "",
+}
+或者
+{
+	"bc_content": "您的剩余时长不足10分钟",
+	"btn_name": "点击充值",
+	"btn_link": 1, // 1 跳转付费充值页面， 2 跳转兑换充值， 3 跳转首页
+}
+```
+
+#### ~~剩余时长不足时~~
 ```
 {
 	"timestr": "您的剩余时长不足10分钟", // 如果时长不够时会产生该字段
