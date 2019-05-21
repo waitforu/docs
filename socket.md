@@ -97,15 +97,21 @@ $ws_client->send(JSON.stringify(data));
 #### 广播
 ```
 {
-	"bc_content": "倒计时10分钟开始",
-	"btn_name": "",
-	"btn_link": "",
+	"broadcast":
+	{
+		"content": "倒计时10分钟开始",
+		"btn_name": "", // 按钮名称为空，则无按钮，按钮直接加文本末端
+		"btn_link": "",
+	}
 }
 或者
 {
-	"bc_content": "您的剩余时长不足10分钟",
-	"btn_name": "点击充值",
-	"btn_link": 1, // 1 跳转付费充值页面， 2 跳转兑换充值， 3 跳转首页
+	"broadcast":
+	{
+		"content":"您的剩余时长不足10分钟",
+		"btn_name":"点击充值", // 按钮名称为空，则无按钮，按钮直接加文本末端
+		"btn_link":"1"
+	}
 }
 ```
 
