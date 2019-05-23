@@ -27,6 +27,7 @@
 |　├─fisher_id | int | 是 | 钓手号 |
 |　├─nick_name | string | 是 | 昵称 |
 |　├─avatar | int | 是 | 钓手头像地址 |
+|　├─rank | string | 是 | 榜单排名 |
 |　└─focused | boolean | 是 | 是否已关注 |
 
 ## 范例
@@ -45,10 +46,11 @@ headers
     "code": 200,
     "message": "success",
     "data": {
-        "fisher_id": 59041581,
-        "avatar": "https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg",
-        "nick_name": "sf_BUJXJZSP",
-        "focused": true
+        "fisher_id": 13164844,
+        "avatar": "http://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/avatar/1547614250661head.png",
+        "nick_name": "钱塘一哥",
+        "focused": 1,
+        "rank": "第3"
     }
 }
 ```
