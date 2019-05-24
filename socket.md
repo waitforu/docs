@@ -18,6 +18,7 @@
 - [发送消息 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#发送消息-垂钓者)
 - [**广播**](https://github.com/waitforu/docs/blob/master/socket.md#广播) **new**
 - [**动作完成指令推送**](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送) **new**
+- [**首次帮助提示推送**](https://github.com/waitforu/docs/blob/master/socket.md#首次帮助提示推送) **new**
 
 ### 返回参数
 
@@ -127,6 +128,13 @@ $ws_client->send(JSON.stringify(data));
 {
 	"now_cmd"： "03", // 当前指令位置 03复位，04上饵，05抖饵，06垂钓，07刺鱼，08提鱼，09抄鱼，0a摘鱼，02收鱼成功
 	"now_status": "02" // 指令状态 00 下发 01 指令进行中 02 已完成
+}
+```
+
+#### 首次帮助提示推送
+```
+{
+	"tiro_prompt"： "按“上饵”，立即开钓",
 }
 ```
 

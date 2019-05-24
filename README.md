@@ -54,7 +54,7 @@ in: header
 
 ## 目录
 
-- [Socket](https://github.com/waitforu/docs/blob/master/socket.md)
+- [Socket](https://github.com/waitforu/docs/blob/master/socket.md) **new 首次帮助，指令完成推送，广播**
 - [苹果支付支付结束处理](https://github.com/waitforu/docs/blob/master/applepay/save.md)
 - [首页](https://github.com/waitforu/docs/blob/master/index/index.md)
 - [发送短信](https://github.com/waitforu/docs/blob/master/send_sms.md)
