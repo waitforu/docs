@@ -18,6 +18,8 @@
 | 字段名称 | 字段类型 | 是否必须 | 默认值 | 说明 |
 |    -    |    -    |    -    |    -   |  -   |
 | fp_id | int | 是 | - | 钓台编号 |
+| type | int | 是 | - | 故障类型 |
+| solution | string | 否 | - | 详细描述 |
 
 ## 返回参数
 
@@ -39,6 +41,8 @@ headers:
 	Content-Type : application/x-www-form-urlencoded
 body:
 	fp_id: 5
+	type: 5
+	solution: '16:12分记鱼器少记一条鱼'
 
 ```
 
@@ -54,5 +58,10 @@ body:
 {
     "code": 422,
     "message": "错误的报障方式"
+}
+缺少type时
+{
+    "code": 422,
+    "message": "请输入正确的故障类型"
 }
 ```

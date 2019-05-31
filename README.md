@@ -50,6 +50,8 @@ in: header
 | 430   | 任务列表，链接需要跳转 | 同400 |
 | 500   | 服务器错误 | 同400 |
 
+## [更新列表(即新修改接口列表)](https://github.com/waitforu/docs/blob/master/CHANGELOG.md)
+
 ## [后台API文档](https://github.com/waitforu/docs/tree/master/backend)
 
 ## 目录
@@ -111,6 +113,7 @@ in: header
 - [变现猫](https://github.com/waitforu/docs/tree/master/bianxianmao)
 	- [获取变现猫免登录URL](https://github.com/waitforu/docs/tree/master/bianxianmao/index.md)
 - [故障](https://github.com/waitforu/docs/tree/master/fault)
+	- [获取故障类型](https://github.com/waitforu/docs/tree/master/fault/index.md)
 	- [用户报障](https://github.com/waitforu/docs/tree/master/fault/save.md)
 - [新手指南](https://github.com/waitforu/docs/tree/master/novice)
 	- [新手指南步骤时长](https://github.com/waitforu/docs/tree/master/novice/index.md)
