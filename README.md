@@ -35,6 +35,15 @@ default: Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThF
 in: header
 ```
 
+#### app_type
+```
+type: string 
+require: true
+default: android
+in: header
+marks: APP类型， android: 安卓， ios: ios
+```
+
 ### 部分返回信息code表
 
 | CODE  |    说明      | 备注  |
