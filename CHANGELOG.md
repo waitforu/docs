@@ -2,7 +2,7 @@
 
 ## 2019-05更新记录
 
-* 新增头`app_type` [详细文档](https://github.com/waitforu/docs#app_type)
+* 新增头`app_type` 更改为 `app-type` [详细文档](https://github.com/waitforu/docs#app_type)
 * 进入渔场，新增自动场指令 [详细文档](https://github.com/waitforu/docs/tree/master/fishing/save.md)
 * 创建订单，新增苹果支付创建订单 [详细文档](https://github.com/waitforu/docs/tree/master/orders/save.md)
 * 我的时长页，新增对苹果支付的内容支持 [详细文档](https://github.com/waitforu/docs/tree/master/time/index.md)
