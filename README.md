@@ -35,7 +35,7 @@ default: Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThF
 in: header
 ```
 
-#### app_type
+#### app-type
 ```
 type: string 
 require: true
