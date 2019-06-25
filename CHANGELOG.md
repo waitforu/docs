@@ -1,7 +1,13 @@
 # 历史更新
 
+## 2019-06更新记录
+
+* 钓鱼图片分享, 图片内容调整
+* 获取的`个人头像`大小调整
+
 ## 2019-05更新记录
 
+* 新增接口`钓鱼帮助` [详细文档](https://github.com/waitforu/docs/tree/master/fishing/help.md)
 * 新增头`app_type` [详细文档](https://github.com/waitforu/docs#app_type)
 * 进入渔场，新增自动场指令 [详细文档](https://github.com/waitforu/docs/tree/master/fishing/save.md)
 * 创建订单，新增苹果支付创建订单 [详细文档](https://github.com/waitforu/docs/tree/master/orders/save.md)
