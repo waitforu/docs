@@ -2,6 +2,11 @@
 
 ## 2019-06更新记录
 
+* socket钓鱼大状态 [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送)
+* socket钓到鱼后推送该时间能获得渔币 [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#钓到鱼推送)
+* 围观添加渔场 [详细文档](https://github.com/waitforu/docs/tree/master/focus/read.md#返回参数)
+
+#### 06-25前
 * 钓鱼图片分享, 图片内容调整
 * 获取的`个人头像`大小调整
 

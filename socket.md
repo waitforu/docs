@@ -1,7 +1,7 @@
 # Socket
 ## 钓鱼者
 ```
-请求地址: ws://212.64.81.173:9501?fishing_id={fishing_id}&ws_fp_id={fp_id}&access_token={access_token}
+请求地址: ws://www.gofishfarm.com:9501?fishing_id={fishing_id}&ws_fp_id={fp_id}&access_token={access_token}
 ```
 ### 请求参数
 
@@ -19,6 +19,7 @@
 - [**广播**](https://github.com/waitforu/docs/blob/master/socket.md#广播) **new**
 - [**动作完成指令推送**](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送) **new**
 - [**首次帮助提示推送**](https://github.com/waitforu/docs/blob/master/socket.md#首次帮助提示推送) **new**
+- [**钓到鱼推送**](https://github.com/waitforu/docs/blob/master/socket.md#钓到鱼推送) **new**
 
 ### 返回参数
 
@@ -35,6 +36,15 @@
 |　├─name | string | 是 | 昵称 |
 |　├─msg | string | 是 | 消息主体 |
 |　└─msg_type | string | 是 | 消息类型: message - 文本 |
+| now_mode | int | 否 | 当前大状态 |
+| now_cmd | string | 否 | 当前指令 |
+| now_status | string | 否 | 当前指令状态 |
+| tiro_prompt | string | 否 | 提示 |
+| integration | int | 否 | 钓到鱼可获渔币 |
+| broadcast | array | 否 | 广播 |
+|　├─content | string | 是 | 广播内容 |
+|　├─btn_name | string | 是 | 跳转按钮名称 |
+|　└─btn_link | string | 是 | 跳转链接 1 跳转充值，2 跳转首页，3 跳转渔币兑换 |
 
 ### 范例
 
@@ -42,13 +52,13 @@
 > 测试
 
 ```
-wsUrl = "ws://148.70.13.176:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
+wsUrl = "ws://dev-api.gofishfarm.com:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
 ```
 
 > 正式
 
 ```
-wsUrl = "ws://212.64.81.173:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
+wsUrl = "ws://www.gofishfarm.com:9501?fishing_id=67224273&ws_fp_id=1&access_token=L5pnaJx5M2hb6wdguU6NHjRskEK4XcG7";
 ```
 
 #### 首次进入返回值
@@ -126,6 +136,7 @@ $ws_client->send(JSON.stringify(data));
 #### 动作完成指令推送
 ```
 {
+	"now_mode": 1, // 钓鱼大状态 1 状态1， 2 状态2， ... n 状态n 只有要跳转下个状态时才有该状态值
 	"now_cmd"： "03", // 当前指令位置 03复位，04上饵，05抖饵，06垂钓，07刺鱼，08提鱼，09抄鱼，0a摘鱼，02收鱼成功
 	"now_status": "02" // 指令状态 00 下发 01 指令进行中 02 已完成
 }
@@ -135,6 +146,14 @@ $ws_client->send(JSON.stringify(data));
 ```
 {
 	"tiro_prompt"： "按“上饵”，立即开钓",
+}
+```
+
+#### 钓到鱼推送
+```
+{
+	"ws_fish_num": 1,
+	"integration": 80 
 }
 ```
 
@@ -163,7 +182,7 @@ $ws_client->send(JSON.stringify(data));
 onclose响应事件，此时前端应关闭页面
 ```
 
-#### 限位推送
+#### ~~限位推送~~
 ```
 {
 	"ws_limit": 1, // 1 是提竿限位，2 上饵限位，4 抛竿限位
@@ -172,7 +191,7 @@ onclose响应事件，此时前端应关闭页面
 
 ## 围观
 ```
-请求地址: ws://212.64.81.173:9501?onlook_id={onlook_id}&ws_fp_id={fp_id}&access_token={access_token}
+请求地址: ws://www.gofishfarm.com:9501?onlook_id={onlook_id}&ws_fp_id={fp_id}&access_token={access_token}
 ```
 ### 请求参数
 
@@ -202,6 +221,10 @@ onclose响应事件，此时前端应关闭页面
 |　├─name | string | 是 | 昵称 |
 |　├─msg | string | 是 | 消息主体 |
 |　└─msg_type | string | 是 | 消息类型: message - 文本 |
+| broadcast | array | 否 | 广播 |
+|　├─content | string | 是 | 广播内容 |
+|　├─btn_name | string | 是 | 跳转按钮名称 |
+|　└─btn_link | string | 是 | 跳转链接 1 跳转充值，2 跳转首页，3 跳转渔币兑换 |
 
 ### 范例
 
@@ -210,13 +233,13 @@ onclose响应事件，此时前端应关闭页面
 > 测试
 
 ```
-wsUrl = "ws://148.70.13.176:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
+wsUrl = "ws://dev-api.gofishfarm.com:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
 ```
 
 > 正式
 
 ```
-wsUrl = "ws://212.64.81.173:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
+wsUrl = "ws://www.gofishfarm.com:9501?onlook_id=9678212&ws_fp_id=1&access_token=RDFqp8nTh94XkU7AmeEycs5zxQ33MZ6w";
 ```
 
 #### 首次进入返回值
@@ -263,6 +286,26 @@ $ws_client->send(JSON.stringify(data));
 该钓台所有人都会收到该信息
 ```
 
+#### 围观广播
+```
+{
+	"broadcast":
+	{
+		"content": "倒计时10分钟开始",
+		"btn_name": "", // 按钮名称为空，则无按钮，按钮直接加文本末端
+		"btn_link": "",
+	}
+}
+或者
+{
+	"broadcast":
+	{
+		"content":"您的剩余时长不足10分钟",
+		"btn_name":"点击充值", // 按钮名称为空，则无按钮，按钮直接加文本末端
+		"btn_link":"1"
+	}
+}
+```
 #### 有围观人进入时
 ```
 {

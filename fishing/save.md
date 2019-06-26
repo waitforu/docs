@@ -36,6 +36,11 @@
 |　├─on_time | int | 是 | 开响应时间 |
 |　├─off_time | int | 是 | 关响应时间 |
 |　├─fish_integration | int | 是 | 每条鱼对应可获渔币 |
+|　├─user_info | array | 是 | 个人信息，即钓台头像等信息 |
+|　│　　├─avatar | string | 是 | 头像 |
+|　│　　├─nick_name | string | 是 | 昵称 |
+|　│　　├─rank | string | 是 | 总榜排名 |
+|　│　　└─fishery_name | string | 是 | 渔场名称 |
 |　├─lives | array | 是 | 钓台关联所有直播流地址集 |
 |　│　　└─下标 | string | 是 | 直播流地址,第一个地址为默认播放地址 |
 |　└─commands | array | 是 | 指令集(send和on off选其中一组 新手场用send 高手场用on off) |
@@ -73,8 +78,7 @@ headers:
 	Authorization : Bearer NFVvMTFKRnhyUWlOTlBpeFdHS1JWVmZjbWt6UE5Lbjg6NjcyMjQyNzM6akRXNThFQ2UyRzFyM1FSRlpxZDcwVTg0Njd6aU40b2M=
 	Content-Type : application/x-www-form-urlencoded
 body:
-	status : 2
-
+	status : 1
 ```
 
 ### 回收信息
@@ -90,7 +94,7 @@ body:
         "dtu_apikay": "vAcBwxQ5D4HiISRtxDwoQXxE=xI=",
         "on_time": 150,
         "off_time": 150,
-        "fish_integration": 100,
+        "fish_integration": 100, // 下版本为辅助条件
         "lives": [
             "rtmp://dytl.game.caizs.com/live/11111?bizid=37147&txSecret=4bd09fe542ddecc1d0ae42694b6ccb5f&txTime=5C320520"
         ],
@@ -119,6 +123,12 @@ body:
             "send9": "AAABCQA=",
             "send10": "AAABCgA="
         },
+        "user_info": {
+            "avatar": "https://sfyb-1258095529.piccd.myqcloud.com/default/itachi.jpg/artwork",
+            "nick_name": "阿萨德饕餮余淮",
+            "rank": "第7",
+            "fishery_name": "3号钓台"
+        }
     }
 }
 或者
@@ -128,5 +138,10 @@ body:
     "data": {
         "info": 1,
     }
+}
+或者
+{
+    "code": 422,
+    "message": "您还未结束上次钓鱼"
 }
 ```

@@ -28,6 +28,7 @@
 |　├─nick_name | string | 是 | 昵称 |
 |　├─avatar | int | 是 | 钓手头像地址 |
 |　├─rank | string | 是 | 榜单排名 |
+|　├─fishery_name | string | 是 | 渔场名称 |
 |　└─focused | boolean | 是 | 是否已关注 |
 
 ## 范例
@@ -50,7 +51,8 @@ headers
         "avatar": "http://sfyb-1258095529.cos.ap-chengdu.myqcloud.com/avatar/1547614250661head.png",
         "nick_name": "钱塘一哥",
         "focused": 1,
-        "rank": "第3"
+        "rank": "第3",
+        "fishery_name": "1号钓台"
     }
 }
 ```
