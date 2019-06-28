@@ -1,6 +1,6 @@
 # 发送短信接口
 ```
-接口地址： http://148.70.13.176/send_sms
+接口地址： http://www.gofishfarm.com/send_sms
 请求方式： POST
 接口备注：
 ```

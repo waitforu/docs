@@ -58,6 +58,8 @@
 |　 　　├─off6 | string | 是 | 五路开指令binary流经过base64加密 |
 |　 　　├─alloff | string | 是 | 全关指令binary流经过base64加密 |
 |　 　　├─ - | - | - | - |
+|　 　　├─send0 | string | 是 | 查询指令binary流经过base64加密 |
+|　 　　├─send1 | string | 是 | 心跳指令binary流经过base64加密 |
 |　 　　├─send3 | string | 是 | 复位指令binary流经过base64加密 |
 |　 　　├─send4 | string | 是 | 上饵指令binary流经过base64加密 |
 |　 　　├─send5 | string | 是 | 抖饵指令binary流经过base64加密 |
@@ -114,6 +116,8 @@ body:
             "alloff": "/g8AAAAFAQAgUg=="
         },
         "commands": { // 新手场指令
+            "send0": "AAABAAA=",
+            "send1": "AAABAQA=",
             "send3": "AAABAwA=",
             "send4": "AAABBAA=",
             "send5": "AAABBQA=",

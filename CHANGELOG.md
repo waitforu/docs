@@ -2,7 +2,8 @@
 
 ## 2019-06更新记录
 
-* 进入钓台 添加`个人信息-user_info` [详细文档](https://github.com/waitforu/docs/tree/master/fishing/save.md#返回参数)
+* 进入钓台 添加`查询、心跳指令`返回值 [详细文档](https://github.com/waitforu/docs/tree/master/fishing/save.md#返回参数)
+* 进入钓台 添加`个人信息-user_info`返回值 [详细文档](https://github.com/waitforu/docs/tree/master/fishing/save.md#返回参数)
 * socket钓鱼大状态 [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送)
 * socket钓到鱼后推送该时间能获得渔币 [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#钓到鱼推送)
 * 围观添加渔场 [详细文档](https://github.com/waitforu/docs/tree/master/focus/read.md#返回参数)
