@@ -29,7 +29,7 @@
 |　├─avatar | int | 是 | 钓手头像地址 |
 |　├─rank | string | 是 | 榜单排名 |
 |　├─fishery_name | string | 是 | 渔场名称 |
-|　└─focused | boolean | 是 | 是否已关注 |
+|　└─focused | int | 是 | 关注 1 未关注, 2 已关注, 3 互相关注 |
 
 ## 范例
 
