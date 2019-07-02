@@ -1,5 +1,9 @@
 # 历史更新
 
+## 2019-07更新记录
+
+* socket按钮发送信息 [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#发送指令时操作)
+
 ## 2019-06更新记录
 
 * 进入钓台 添加`查询、心跳指令`返回值 [详细文档](https://github.com/waitforu/docs/tree/master/fishing/save.md#返回参数)

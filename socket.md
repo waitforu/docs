@@ -16,6 +16,7 @@
 - [钓手心跳输入值 'heartbeat'](https://github.com/waitforu/docs/blob/master/socket.md#钓手心跳输入)
 - [限位推送](https://github.com/waitforu/docs/blob/master/socket.md#限位推送)
 - [发送消息 'op_type'](https://github.com/waitforu/docs/blob/master/socket.md#发送消息-垂钓者)
+- [**发送指令时操作**](https://github.com/waitforu/docs/blob/master/socket.md#发送指令时操作) **new**
 - [**广播**](https://github.com/waitforu/docs/blob/master/socket.md#广播) **new**
 - [**动作完成指令推送**](https://github.com/waitforu/docs/blob/master/socket.md#动作完成指令推送) **new**
 - [**首次帮助提示推送**](https://github.com/waitforu/docs/blob/master/socket.md#首次帮助提示推送) **new**
@@ -131,6 +132,16 @@ $ws_client->send(JSON.stringify(data));
 {
 	"timestr": "您的剩余时长不足10分钟", // 如果时长不够时会产生该字段
 }
+```
+
+#### 发送指令时操作
+```
+客户端发送:
+var data = {
+	"op_type": "send_cmd_btn"
+	, "cmd_btn": 3 // 3 复位，4 上饵，5 抖饵，6 抛竿，7 甩竿，8 提鱼，9 抄鱼，10 摘鱼，11 重提。PS: 现在只需要复位和重提的时候socket给服务器发信息就可以了
+};
+服务器无返回值
 ```
 
 #### 动作完成指令推送
