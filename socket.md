@@ -42,6 +42,8 @@
 | now_status | string | 否 | 当前指令状态 |
 | tiro_prompt | string | 否 | 提示 |
 | integration | int | 否 | 钓到鱼可获渔币 |
+| weight | int | 否 | 当前钓到鱼的总量,单位g |
+| gross_weight | int | 否 | 总共钓到鱼的重量,单位g |
 | broadcast | array | 否 | 广播 |
 |　├─content | string | 是 | 广播内容 |
 |　├─btn_name | string | 是 | 跳转按钮名称 |
@@ -69,6 +71,7 @@ wsUrl = "ws://www.gofishfarm.com:9501?fishing_id=67224273&ws_fp_id=1&access_toke
 	"ws_onlook":0,
 	"ws_likes":0,
 	"ws_fish_num":0,
+	"gross_weight": 0,
 	'timestr': "您的剩余时长不足10分钟", // 如果时长不够时会产生该字段
 }
 ```
@@ -164,7 +167,9 @@ var data = {
 ```
 {
 	"ws_fish_num": 1,
-	"integration": 80 
+	"integration": 80,
+	"weight": 30, // 单位g
+	"gross_weight": 150, // 单位g
 }
 ```
 
@@ -227,6 +232,7 @@ onclose响应事件，此时前端应关闭页面
 | ws_onlook | int | 否 | 围观人数 |
 | ws_likes | int | 否 | 点赞人数 |
 | ws_fish_num | int | 否 | 钓鱼数 |
+| gross_weight | int | 否 | 当前钓台总共钓到鱼的重量,单位g |
 | onheartbeat | boolean | 否 | 心跳反应验证 |
 | messages | array | 否 | 消息内容 |
 |　├─name | string | 是 | 昵称 |
@@ -259,7 +265,8 @@ wsUrl = "ws://www.gofishfarm.com:9501?onlook_id=9678212&ws_fp_id=1&access_token=
 	"ws_fisher_id":"67224273",
 	"ws_onlook":1,
 	"ws_likes":0,
-	"ws_fish_num":0,
+	"gross_weight": 120,
+	"ws_fish_num":3,
 }
 ```
 
@@ -336,6 +343,7 @@ $ws_client->send('{"op_type": "cutover", "ws_fp_id": 2}');
 	"ws_onlook":1,
 	"ws_likes":0,
 	"ws_fish_num":0,
+	"gross_weight": 0,
 }
 ```
 

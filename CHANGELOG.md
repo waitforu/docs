@@ -1,5 +1,9 @@
 # 历史更新
 
+## 2019-11更新记录
+
+* socket加推2个变量`weight` `gross_weight` [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#返回参数)
+
 ## 2019-07更新记录
 
 * socket按钮发送信息 [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#发送指令时操作)
