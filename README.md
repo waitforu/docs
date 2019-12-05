@@ -60,6 +60,7 @@ marks: APP类型， android: 安卓， ios: ios
 | 500   | 服务器错误 | 同400 |
 
 ## [更新列表(即新修改接口列表)](https://github.com/waitforu/docs/blob/master/CHANGELOG.md)
+最后更新时间 2019年12月5日15:17:51
 
 ## [后台API文档](https://github.com/waitforu/docs/tree/master/backend)
 
