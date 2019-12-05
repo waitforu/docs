@@ -19,6 +19,7 @@
 | phone | string | 是 | - | 手机号(必须是大陆手机号) |
 | code | string | 是 | - | 短信验证码 |
 | imei | string | 是 | - | IMEI码 |
+| **channel** | string | 是 | android | 渠道简称 |
 
 ## 接收参数 —— 微信登录
 
@@ -29,6 +30,7 @@
 | avatar | string | 是 | - | 微信头像地址 |
 | gender | string | 是 | 1 | 性别1 男，2 女 |
 | imei | string | 是 | - | IMEI码 |
+| **channel** | string | 是 | android | 渠道简称 |
 
 ## 接收参数 —— 微博登录
 
@@ -39,6 +41,7 @@
 | avatar | string | 是 | - | 微博头像地址 |
 | gender | string | 是 | 1 | 性别1 男，2 女 |
 | imei | string | 是 | - | IMEI码 |
+| **channel** | string | 是 | android | 渠道简称 |
 
 ## 返回参数
 
@@ -69,6 +72,7 @@ posts:
 	phone: 18288888888
 	code: 123456
 	imei: 865441030309330
+	channel: android
 ```
 
 ### 输入2
@@ -82,6 +86,7 @@ posts:
 	avatar: https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg
 	gender: 1
 	imei: 865441030309330
+	channel: douyin
 ```
 
 ### 输入3
@@ -95,6 +100,7 @@ posts:
 	avatar: https://runmanz-1251536883.cos.ap-shanghai.myqcloud.com/default/itachi.jpg
 	gender: 1
 	imei: 865441030309330
+	channel: xiaomi
 ```
 
 ### 输出

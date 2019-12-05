@@ -1,5 +1,8 @@
 # 历史更新
 
+## 2019-12更新记录
+* login接口添加1个变量`channel(渠道简称)` [详细文档](https://github.com/waitforu/docs/tree/master/user/login.md#描述)
+
 ## 2019-11更新记录
 
 * socket加推2个变量`weight` `gross_weight` [详细文档](https://github.com/waitforu/docs/blob/master/socket.md#返回参数)
